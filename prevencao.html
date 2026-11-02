@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prevenção e meio ambiente | Vermes que Importam</title>
+  <meta name="description" content="Medidas práticas de saneamento, higiene e cuidados que evitam as verminoses.">
+  <meta name="theme-color" content="#0F5C5A">
+  <!-- <link rel="icon" href="assets/img/logo/favicon.png"> A_PREENCHER quando houver logo -->
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <div id="cabecalho">
+    <noscript>
+      <nav aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="platelmintos.html">Platelmintos</a></li>
+          <li><a href="nematelmintos.html">Nematelmintos</a></li>
+          <li><a href="verminoses.html">Verminoses</a></li>
+          <li><a href="prevencao.html">Prevenção</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </noscript>
+  </div>
+
+  <main id="conteudo" tabindex="-1">
+    <noscript>
+      <div class="estado-mensagem estado-mensagem--erro" role="alert">
+        <p>Esta página precisa de JavaScript para mostrar a tabela de doenças e medidas.</p>
+        <a class="botao" href="index.html">Voltar ao início</a>
+      </div>
+    </noscript>
+
+    <section class="secao">
+      <div class="container">
+        <h1>Prevenção e meio ambiente</h1>
+        <p>As verminoses podem ser evitadas com ações simples no dia a dia: saneamento, água segura, higiene pessoal e cuidados com os alimentos e com o solo.</p>
+
+        <h2>Saneamento básico</h2>
+        <ul class="lista-topicos">
+          <li>Água tratada e filtrada para beber e cozinhar.</li>
+          <li>Destino adequado do esgoto e da coleta de lixo.</li>
+        </ul>
+
+        <h2>Higiene pessoal e dos alimentos</h2>
+        <ul class="lista-topicos">
+          <li>Lavar bem as mãos.</li>
+          <li>Lavar frutas e verduras.</li>
+          <li>Cozinhar bem as carnes.</li>
+        </ul>
+
+        <h2>Cuidados com o solo e os calçados</h2>
+        <p>Algumas verminoses, como a ancilostomose e a estrongiloidíase, estão ligadas ao contato com solo contaminado. Usar calçados e evitar o contato direto com a terra são cuidados importantes.</p>
+
+        <h2>Água parada, rios, lagoas e caramujos</h2>
+        <p>Na esquistossomose, o controle de caramujos e os cuidados com a água de rios e lagoas fazem parte da prevenção.</p>
+        <!-- A_PREENCHER: equipe indica o que se aplica à realidade regional -->
+        <p><span class="pendente">A preencher pela equipe</span></p>
+      </div>
+    </section>
+
+    <section class="secao secao--apoio" aria-labelledby="titulo-tabela">
+      <div class="container">
+        <h2 id="titulo-tabela">Doença x principal medida de prevenção</h2>
+        <p class="estado-mensagem" id="tabela-estado" role="status">Carregando...</p>
+        <div class="tabela-wrapper">
+          <table class="tabela">
+            <caption>Cada doença e a principal medida de prevenção ligada a ela</caption>
+            <thead>
+              <tr>
+                <th scope="col">Doença</th>
+                <th scope="col">Principal medida de prevenção</th>
+              </tr>
+            </thead>
+            <tbody id="corpo-tabela-prevencao">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-posso-fazer">
+      <div class="container">
+        <h2 id="titulo-posso-fazer">O que eu posso fazer</h2>
+        <ul class="lista-topicos">
+          <li>Conferir se a água que você bebe é tratada.</li>
+          <li>Lavar mãos, frutas e verduras antes das refeições.</li>
+          <li>Cozinhar bem as carnes.</li>
+          <li>Usar calçado ao circular em solo de risco.</li>
+          <li>Evitar o contato com água parada de rios e lagoas sem orientação.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <div id="rodape"></div>
+
+  <script src="assets/js/utils.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/prevencao.js" defer></script>
+</body>
+</html>

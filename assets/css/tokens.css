@@ -1,0 +1,47 @@
+/* Tokens do design: única fonte de cores, tipografia, espaçamentos e formas. */
+:root {
+  /* Cores */
+  --cor-primaria: #0F5C5A;
+  --cor-primaria-escura: #0A4240;
+  --cor-apoio: #DCEFE6;
+  --cor-destaque: #F2A93B;
+  --cor-destaque-fundo: #FFF3D6;
+  --cor-alerta: #9B2C2C;
+  --cor-alerta-fundo: #FDECEC;
+  --cor-texto: #1F2A33;
+  --cor-texto-suave: #4A5963;
+  --cor-fundo: #F7F9F8;
+  --cor-superficie: #FFFFFF;
+  --cor-borda: #D5DEDA;
+  --cor-foco: #1A73E8;
+  --cor-texto-claro: #FFFFFF;
+
+  /* Tipografia */
+  --fonte-texto: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --fonte-titulo: "Trebuchet MS", system-ui, sans-serif;
+  --tamanho-base: 1rem;
+  --altura-linha: 1.6;
+  --tamanho-h1: clamp(1.9rem, 5vw, 2.8rem);
+  --tamanho-h2: clamp(1.5rem, 3.5vw, 2rem);
+  --tamanho-h3: 1.25rem;
+
+  /* Espaçamentos (escala) */
+  --esp-1: 0.25rem;
+  --esp-2: 0.5rem;
+  --esp-3: 0.75rem;
+  --esp-4: 1rem;
+  --esp-5: 1.5rem;
+  --esp-6: 2rem;
+  --esp-7: 3rem;
+  --esp-8: 4.5rem;
+
+  /* Forma e sombra */
+  --raio: 12px;
+  --raio-pequeno: 6px;
+  --raio-pilula: 999px;
+  --sombra-card: 0 2px 8px rgba(15, 50, 48, 0.08);
+  --sombra-card-hover: 0 6px 16px rgba(15, 50, 48, 0.14);
+  --transicao-rapida: 0.15s ease;
+  --largura-max: 1100px;
+  --largura-texto: 70ch;
+}

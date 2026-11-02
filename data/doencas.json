@@ -1,0 +1,36 @@
+[
+  {
+    "id": "teniase-cisticercose",
+    "statusConteudo": "rascunho",
+    "nomePopular": "Teníase e cisticercose",
+    "agentes": ["Taenia solium", "Taenia saginata"],
+    "filo": "Platyhelminthes",
+    "classe": "Cestoda",
+    "resumo": "A_PREENCHER",
+    "hospedeiroDefinitivo": "Ser humano",
+    "hospedeiroIntermediario": "A_PREENCHER",
+    "transmissao": "A_PREENCHER",
+    "cicloDeVida": ["A_PREENCHER"],
+    "imagemCiclo": null,
+    "sintomas": ["A_PREENCHER"],
+    "prevencao": ["A_PREENCHER"],
+    "referencias": []
+  },
+  {
+    "id": "ascaridiase",
+    "statusConteudo": "rascunho",
+    "nomePopular": "Ascaridíase",
+    "agentes": ["Ascaris lumbricoides"],
+    "filo": "Nematoda",
+    "classe": null,
+    "resumo": "A_PREENCHER",
+    "hospedeiroDefinitivo": "Ser humano",
+    "hospedeiroIntermediario": null,
+    "transmissao": "A_PREENCHER",
+    "cicloDeVida": ["A_PREENCHER"],
+    "imagemCiclo": null,
+    "sintomas": ["A_PREENCHER"],
+    "prevencao": ["A_PREENCHER"],
+    "referencias": []
+  }
+]

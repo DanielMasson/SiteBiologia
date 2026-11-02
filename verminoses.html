@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verminoses | Vermes que Importam</title>
+  <meta name="description" content="Lista das verminoses abordadas no site, com agente causador, transmissão, sintomas e prevenção.">
+  <meta name="theme-color" content="#0F5C5A">
+  <!-- <link rel="icon" href="assets/img/logo/favicon.png"> A_PREENCHER quando houver logo -->
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <div id="cabecalho">
+    <noscript>
+      <nav aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="platelmintos.html">Platelmintos</a></li>
+          <li><a href="nematelmintos.html">Nematelmintos</a></li>
+          <li><a href="verminoses.html">Verminoses</a></li>
+          <li><a href="prevencao.html">Prevenção</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </noscript>
+  </div>
+
+  <main id="conteudo" tabindex="-1">
+    <noscript>
+      <div class="estado-mensagem estado-mensagem--erro" role="alert">
+        <p>Esta página precisa de JavaScript para mostrar o conteúdo.</p>
+        <a class="botao" href="index.html">Voltar ao início</a>
+      </div>
+    </noscript>
+
+    <section class="secao">
+      <div class="container">
+        <h1>Verminoses</h1>
+        <p>Cada card leva a uma ficha com o agente causador, a forma de transmissão, os sintomas comuns e as medidas de prevenção.</p>
+
+        <div class="filtro" role="group" aria-label="Filtrar por grupo">
+          <button type="button" class="filtro__botao" data-grupo="todos" aria-pressed="true">Todos</button>
+          <button type="button" class="filtro__botao" data-grupo="platelmintos" aria-pressed="false">Platelmintos</button>
+          <button type="button" class="filtro__botao" data-grupo="nematelmintos" aria-pressed="false">Nematelmintos</button>
+        </div>
+
+        <p id="resultado-filtro" class="sr-only" aria-live="polite"></p>
+        <p class="estado-mensagem" id="lista-estado" role="status">Carregando...</p>
+        <div id="lista-doencas" class="grade grade--3"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="rodape"></div>
+
+  <script src="assets/js/utils.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/verminoses.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nematelmintos | Vermes que Importam</title>
+  <meta name="description" content="Os vermes de corpo cilíndrico do filo Nematoda: o que são, importância e as doenças ligadas ao grupo.">
+  <meta name="theme-color" content="#0F5C5A">
+  <!-- <link rel="icon" href="assets/img/logo/favicon.png"> A_PREENCHER quando houver logo -->
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <div id="cabecalho">
+    <noscript>
+      <nav aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="platelmintos.html">Platelmintos</a></li>
+          <li><a href="nematelmintos.html">Nematelmintos</a></li>
+          <li><a href="verminoses.html">Verminoses</a></li>
+          <li><a href="prevencao.html">Prevenção</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </noscript>
+  </div>
+
+  <main id="conteudo" tabindex="-1">
+    <noscript>
+      <div class="estado-mensagem estado-mensagem--erro" role="alert">
+        <p>Esta página precisa de JavaScript para mostrar a lista de doenças.</p>
+        <a class="botao" href="index.html">Voltar ao início</a>
+      </div>
+    </noscript>
+
+    <section class="secao">
+      <div class="container">
+        <h1>Nematelmintos</h1>
+        <p>Os nematelmintos (filo Nematoda) são vermes de corpo cilíndrico. O grupo inclui espécies parasitas, como a lombriga e o ancilóstomo, e espécies de vida livre.</p>
+
+        <h2>O que são</h2>
+        <ul class="lista-topicos">
+          <li>Corpo cilíndrico.</li>
+          <li>Pseudocelomados.</li>
+          <li>Tubo digestório completo.</li>
+          <li>Sexos separados na maioria das espécies.</li>
+        </ul>
+
+        <svg class="esquema-corpo" viewBox="0 0 360 200" role="img" aria-labelledby="esq-nema-titulo esq-nema-desc">
+          <title id="esq-nema-titulo">Esquema do corpo dos nematelmintos</title>
+          <desc id="esq-nema-desc">Desenho simplificado de um verme de corpo cilíndrico, com o tubo digestório desenhado no interior e os rótulos corpo cilíndrico, pseudoceloma e tubo digestório completo.</desc>
+          <rect class="forma" x="40" y="70" width="280" height="60" rx="30"></rect>
+          <rect class="forma-interna" x="60" y="92" width="240" height="16" rx="8"></rect>
+          <line class="guia" x1="180" y1="70" x2="180" y2="42"></line>
+          <text x="180" y="32" text-anchor="middle">Corpo cilíndrico</text>
+          <line class="guia" x1="250" y1="84" x2="300" y2="160"></line>
+          <text x="300" y="178" text-anchor="middle">Pseudoceloma</text>
+          <line class="guia" x1="100" y1="108" x2="60" y2="160"></line>
+          <text x="20" y="178" text-anchor="start">Tubo digestório completo</text>
+        </svg>
+      </div>
+    </section>
+
+    <section class="secao secao--apoio" aria-labelledby="titulo-importancia">
+      <div class="container">
+        <h2 id="titulo-importancia">Importância ecológica e médica</h2>
+        <p>Entre os nematelmintos há espécies parasitas do ser humano e de outros animais, além de espécies de vida livre, que vivem no solo e na água e têm papel na natureza.</p>
+        <!-- A_PREENCHER: equipe completa os detalhes com fontes confiáveis -->
+        <p><span class="pendente">A preencher pela equipe</span></p>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-doencas">
+      <div class="container">
+        <h2 id="titulo-doencas">Doenças deste grupo</h2>
+        <p class="estado-mensagem" id="grupo-estado" role="status">Carregando...</p>
+        <div id="doencas-do-grupo" class="grade grade--3" data-filo="Nematoda"></div>
+      </div>
+    </section>
+
+    <section class="secao secao--apoio" aria-labelledby="titulo-glossario">
+      <div class="container">
+        <h2 id="titulo-glossario">Glossário</h2>
+        <dl class="glossario">
+          <dt>Nematelmintos</dt>
+          <dd>Vermes de corpo cilíndrico, do filo Nematoda.</dd>
+          <dt>Pseudoceloma</dt>
+          <dd><span class="pendente">A preencher pela equipe</span></dd>
+          <dt>Tubo digestório completo</dt>
+          <dd><span class="pendente">A preencher pela equipe</span></dd>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <div id="rodape"></div>
+
+  <script src="assets/js/utils.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/doencas-do-grupo.js" defer></script>
+</body>
+</html>
