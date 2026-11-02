@@ -19,12 +19,12 @@ Depois acesse <http://localhost:8000>.
 ```
 .
 ├── index.html            # página inicial
-├── *.html                # demais páginas (qrcodes.html ainda em construção)
+├── *.html                # demais páginas (grupos, verminoses, prevenção, galeria, sobre, qrcodes)
 ├── 404.html
 ├── data/                 # dados em JSON (doenças, galeria, referências)
 ├── assets/
 │   ├── css/              # tokens, base, layout, componentes
-│   ├── js/               # utils, main, verminoses, doenca, doencas-do-grupo, prevencao, galeria, sobre
+│   ├── js/               # utils, main, verminoses, doenca, doencas-do-grupo, prevencao, galeria, sobre, qrcodes, qrcode-gerador
 │   └── img/              # ciclos, galeria e logo
 └── documentacao/         # planejamento e instruções do projeto
 ```
@@ -65,6 +65,30 @@ Outras regras de consistência:
 
 1. Abra `data/referencias.json` e adicione um item com `id`, `titulo`, `instituicao`, `ano` e `url`.
 2. A página `sobre.html` lista todas as referências em ordem alfabética de título. Para vinculá-la a uma ficha, use o `id` em `referencias` da doença.
+
+## Como publicar no GitHub Pages
+
+O site é estático e usa só caminhos relativos, então funciona dentro de uma subpasta do GitHub Pages.
+
+1. Envie o projeto para o repositório no GitHub (branch `main`).
+2. No repositório, abra **Settings > Pages**.
+3. Em **Build and deployment**, escolha **Deploy from a branch**, selecione a branch `main` e a pasta `/ (root)`, e salve.
+4. Aguarde alguns minutos. O endereço será `https://<usuario>.github.io/<repositorio>/`.
+5. Abra o endereço no celular e navegue pelas páginas antes de gerar os QR Codes.
+
+## QR Codes para a Mostra
+
+1. Com o site publicado, abra `qrcodes.html`.
+2. No campo "Endereço do site publicado", confira o endereço final (o campo vem preenchido com o endereço da página atual).
+3. A página gera um QR Code para a página inicial e um para cada ficha. Use **Imprimir cartões** (um QR por cartão, com o nome embaixo) ou **Baixar PNG** em cada cartão.
+4. Se o endereço for `localhost` ou de rede local, a página avisa: esses endereços não funcionam nos celulares dos visitantes.
+5. Leia cada QR Code com um celular e confira se abre a ficha certa.
+
+O gerador de QR Code é código próprio em `assets/js/qrcode-gerador.js`, sem bibliotecas externas e sem internet. Ele aceita endereços de até 213 bytes.
+
+## O que ainda falta preencher
+
+Veja `documentacao/pendencias-equipe.md`, com a lista de tudo que está marcado como `A_PREENCHER` e das decisões que cabem à equipe.
 
 ## Aviso
 

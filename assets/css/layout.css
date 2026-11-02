@@ -200,3 +200,11 @@ main {
   border-top: 3px solid var(--cor-destaque);
   max-width: var(--largura-texto);
 }
+
+/* Foco visível sobre fundos escuros: o azul padrão tem pouco contraste com o verde. */
+
+.site-header a:focus-visible,
+.site-header button:focus-visible,
+.site-footer a:focus-visible {
+  outline-color: var(--cor-texto-claro);
+}
