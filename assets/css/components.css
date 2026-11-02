@@ -509,3 +509,134 @@ a.card--link:focus-visible {
 .lightbox__credito {
   color: var(--cor-texto-suave);
 }
+
+/* Campo de formulário */
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-2);
+  max-width: var(--largura-texto);
+}
+
+.campo__rotulo {
+  font-weight: bold;
+}
+
+.campo__entrada {
+  width: 100%;
+  min-height: 44px;
+  padding: var(--esp-3);
+  font-family: var(--fonte-texto);
+  font-size: var(--tamanho-base);
+  color: var(--cor-texto);
+  background-color: var(--cor-superficie);
+  border: 2px solid var(--cor-borda);
+  border-radius: var(--raio-pequeno);
+}
+
+.campo__entrada:focus-visible {
+  outline: 3px solid var(--cor-foco);
+  outline-offset: 2px;
+}
+
+.campo__ajuda {
+  color: var(--cor-texto-suave);
+}
+
+/* QR Codes (página de apoio da Mostra) */
+
+.qr-config {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-4);
+  margin-block: var(--esp-5);
+}
+
+.qr-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--esp-3);
+}
+
+.qr-lista {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--esp-5);
+}
+
+@media (min-width: 700px) {
+  .qr-lista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .qr-lista {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.qr-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--esp-3);
+  padding: var(--esp-5);
+  text-align: center;
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra-card);
+}
+
+.qr-card__canvas {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  image-rendering: pixelated;
+}
+
+.qr-card__url {
+  max-width: 100%;
+  font-size: 0.875rem;
+  color: var(--cor-texto-suave);
+  overflow-wrap: anywhere;
+}
+
+/* Impressão: só os cartões, um QR por cartão com o nome embaixo. Fica no fim do arquivo
+   para vencer, em ordem, as regras de tela de mesma especificidade. */
+
+@media print {
+  .pular-conteudo,
+  .site-header,
+  .site-footer,
+  .nao-imprimir {
+    display: none;
+  }
+
+  .secao {
+    padding-block: 0;
+  }
+
+  .qr-lista {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1cm;
+  }
+
+  .qr-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid var(--cor-texto);
+  }
+
+  .qr-card__canvas {
+    width: 6cm;
+    max-width: none;
+  }
+
+  .qr-card__nome {
+    font-size: 1.25rem;
+  }
+}

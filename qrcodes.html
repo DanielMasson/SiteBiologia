@@ -32,19 +32,42 @@
   </div>
 
   <main id="conteudo" tabindex="-1">
+    <noscript>
+      <div class="estado-mensagem estado-mensagem--erro" role="alert">
+        <p>Esta página precisa de JavaScript para gerar os QR Codes.</p>
+        <a class="botao" href="index.html">Voltar ao início</a>
+      </div>
+    </noscript>
+
     <section class="secao">
       <div class="container">
-        <div class="em-construcao">
-          <h1>QR Codes</h1>
-          <p>Esta página está em construção.</p>
-          <a class="botao" href="index.html">Voltar ao início</a>
-        </div>
+        <h1>QR Codes da Mostra</h1>
+        <p class="nao-imprimir">Página de apoio para a equipe. Gera um QR Code para a página inicial e um para cada ficha de doença. Imprima os cartões e coloque nos estandes, ou baixe cada QR Code em PNG.</p>
+
+        <form class="qr-config nao-imprimir" id="qr-form" novalidate>
+          <div class="campo">
+            <label class="campo__rotulo" for="url-base">Endereço do site publicado</label>
+            <input class="campo__entrada" type="url" id="url-base" name="url-base" inputmode="url" autocomplete="off" spellcheck="false" aria-describedby="url-base-ajuda qr-aviso">
+            <p class="campo__ajuda" id="url-base-ajuda">Endereço da pasta onde o site está publicado, por exemplo o da página inicial. Os QR Codes são atualizados quando você altera o endereço. <!-- A_PREENCHER: URL final de publicação (GitHub Pages ou servidor do IFC) --></p>
+          </div>
+          <p class="aviso-rascunho" id="qr-aviso" role="status" hidden></p>
+          <div class="qr-acoes">
+            <button type="submit" class="botao">Atualizar QR Codes</button>
+            <button type="button" class="botao botao--secundario" id="qr-imprimir">Imprimir cartões</button>
+          </div>
+        </form>
+
+        <p class="estado-mensagem" id="qr-estado" role="status">Carregando...</p>
+        <div id="qr-lista" class="qr-lista"></div>
       </div>
     </section>
   </main>
 
   <div id="rodape"></div>
 
+  <script src="assets/js/utils.js" defer></script>
+  <script src="assets/js/qrcode-gerador.js" defer></script>
   <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/qrcodes.js" defer></script>
 </body>
 </html>
