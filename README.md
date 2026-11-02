@@ -19,12 +19,12 @@ Depois acesse <http://localhost:8000>.
 ```
 .
 ├── index.html            # página inicial
-├── *.html                # demais páginas (parte em construção)
+├── *.html                # demais páginas (qrcodes.html ainda em construção)
 ├── 404.html
 ├── data/                 # dados em JSON (doenças, galeria, referências)
 ├── assets/
 │   ├── css/              # tokens, base, layout, componentes
-│   ├── js/               # utils, main, verminoses, doenca, doencas-do-grupo, prevencao
+│   ├── js/               # utils, main, verminoses, doenca, doencas-do-grupo, prevencao, galeria, sobre
 │   └── img/              # ciclos, galeria e logo
 └── documentacao/         # planejamento e instruções do projeto
 ```
@@ -53,6 +53,18 @@ Outras regras de consistência:
 4. Se a ficha tiver referências, cadastre-as antes em `data/referencias.json` e use os ids na ficha.
 5. Se houver esquema do ciclo de vida, salve o SVG em `assets/img/ciclos/` e preencha `imagemCiclo`.
 6. Abra `verminoses.html` e `doenca.html?id=<novo-id>` no servidor local para conferir.
+
+## Como adicionar uma imagem à galeria
+
+1. Salve a imagem em `assets/img/galeria/` (peso sugerido: até 300 KB).
+2. Abra `data/galeria.json` e adicione um item com `id`, `arquivo`, `legenda`, `alt`, `autor`, `licenca` e `fonte` (use `"acervo da equipe"` em `fonte` para material próprio).
+3. Toda imagem precisa de `alt` descritivo, autoria e licença. Se `autor`, `licenca` ou `fonte` faltarem, o site mostra "A preencher pela equipe" e registra um aviso no console.
+4. Abra `galeria.html` no servidor local para conferir.
+
+## Como adicionar uma referência
+
+1. Abra `data/referencias.json` e adicione um item com `id`, `titulo`, `instituicao`, `ano` e `url`.
+2. A página `sobre.html` lista todas as referências em ordem alfabética de título. Para vinculá-la a uma ficha, use o `id` em `referencias` da doença.
 
 ## Aviso
 

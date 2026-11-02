@@ -32,19 +32,63 @@
   </div>
 
   <main id="conteudo" tabindex="-1">
+    <noscript>
+      <div class="estado-mensagem estado-mensagem--erro" role="alert">
+        <p>Esta página precisa de JavaScript para mostrar a lista de referências.</p>
+        <a class="botao" href="index.html">Voltar ao início</a>
+      </div>
+    </noscript>
+
     <section class="secao">
       <div class="container">
-        <div class="em-construcao">
-          <h1>Sobre</h1>
-          <p>Esta página está em construção.</p>
-          <a class="botao" href="index.html">Voltar ao início</a>
-        </div>
+        <h1>Sobre o projeto</h1>
+        <p>O site Vermes que Importam é um trabalho integrado entre a disciplina de Zoologia e o Curso Técnico em Informática para Internet do IFC. Ele apresenta os platelmintos e os nematelmintos, as verminoses que causam e as medidas de prevenção, e foi feito para a Mostra de Educação Ambiental do IFC.</p>
+
+        <h2>Equipe</h2>
+        <!-- A_PREENCHER: nomes e funções de cada integrante -->
+        <p><span class="pendente">A preencher pela equipe</span></p>
+
+        <h2>Orientadores</h2>
+        <!-- A_PREENCHER: nomes dos professores orientadores -->
+        <p><span class="pendente">A preencher pela equipe</span></p>
+
+        <h2>Instituição</h2>
+        <!-- A_PREENCHER: campus e turma -->
+        <p>Instituto Federal Catarinense (IFC). Campus e turma: <span class="pendente">A preencher pela equipe</span></p>
+      </div>
+    </section>
+
+    <section class="secao secao--apoio" aria-labelledby="titulo-metodologia">
+      <div class="container">
+        <h2 id="titulo-metodologia">Metodologia</h2>
+        <p>Os textos científicos são redigidos e validados pela equipe de conteúdo, com base em fontes confiáveis. Enquanto uma ficha ainda não foi revisada, ela aparece com o aviso de que está em revisão.</p>
+        <p>O conteúdo do site é educativo: não traz diagnóstico, dose ou indicação de medicamento.</p>
+        <!-- A_PREENCHER: etapas do trabalho (pesquisa, escrita, revisão, desenvolvimento) -->
+        <p><span class="pendente">A preencher pela equipe</span></p>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-referencias">
+      <div class="container">
+        <h2 id="titulo-referencias">Referências</h2>
+        <p class="estado-mensagem" id="referencias-estado" role="status">Carregando...</p>
+        <ul id="lista-referencias" class="ficha__lista"></ul>
+      </div>
+    </section>
+
+    <section class="secao secao--apoio" aria-labelledby="titulo-contato">
+      <div class="container">
+        <h2 id="titulo-contato">Contato institucional</h2>
+        <!-- A_PREENCHER: contato institucional do campus, sem dados pessoais sensíveis -->
+        <p><span class="pendente">A preencher pela equipe</span></p>
       </div>
     </section>
   </main>
 
   <div id="rodape"></div>
 
+  <script src="assets/js/utils.js" defer></script>
   <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/sobre.js" defer></script>
 </body>
 </html>
