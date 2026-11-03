@@ -59,13 +59,13 @@ p {
 }
 
 a {
-  color: var(--cor-primaria);
+  color: var(--cor-link);
   text-decoration: underline;
   text-underline-offset: 0.15em;
 }
 
 a:hover {
-  color: var(--cor-primaria-escura);
+  color: var(--cor-link-hover);
 }
 
 a:focus-visible,
@@ -107,7 +107,7 @@ ol {
   z-index: 100;
   padding: var(--esp-3) var(--esp-4);
   background-color: var(--cor-superficie);
-  color: var(--cor-primaria);
+  color: var(--cor-link);
   font-weight: bold;
   transform: translateY(-150%);
 }

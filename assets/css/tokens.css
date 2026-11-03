@@ -1,5 +1,7 @@
 /* Tokens do design: única fonte de cores, tipografia, espaçamentos e formas. */
 :root {
+  color-scheme: light;
+
   /* Cores */
   --cor-primaria: #0F5C5A;
   --cor-primaria-escura: #0A4240;
@@ -16,6 +18,10 @@
   --cor-foco: #1A73E8;
   --cor-texto-claro: #FFFFFF;
   --cor-fundo-modal: rgba(10, 30, 30, 0.75);
+  /* Cores de texto e destaque sobre fundos claros ou escuros (mudam no tema escuro). */
+  --cor-link: #0F5C5A;
+  --cor-link-hover: #0A4240;
+  --cor-marca-hover: #FFF3D6;
 
   /* Tipografia */
   --fonte-texto: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
@@ -45,4 +51,80 @@
   --transicao-rapida: 0.15s ease;
   --largura-max: 1100px;
   --largura-texto: 70ch;
+}
+
+/* Tema escuro: segue o sistema, a menos que a pessoa tenha escolhido o claro no botão do cabeçalho. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-tema="claro"]) {
+    color-scheme: dark;
+    --cor-primaria: #1C7C78;
+    --cor-primaria-escura: #0C4A47;
+    --cor-apoio: #1A302E;
+    --cor-destaque: #F2A93B;
+    --cor-destaque-fundo: #3B2F12;
+    --cor-alerta: #F2A0A0;
+    --cor-alerta-fundo: #3C1E1E;
+    --cor-texto: #E8F0EE;
+    --cor-texto-suave: #A7B6B3;
+    --cor-fundo: #0E1616;
+    --cor-superficie: #162222;
+    --cor-borda: #334745;
+    --cor-foco: #8AB4F8;
+    --cor-texto-claro: #FFFFFF;
+    --cor-fundo-modal: rgba(0, 0, 0, 0.8);
+    --cor-link: #7FD6CF;
+    --cor-link-hover: #B2EAE5;
+    --cor-marca-hover: #FFF3D6;
+    --sombra-card: 0 2px 8px rgba(0, 0, 0, 0.4);
+    --sombra-card-hover: 0 6px 16px rgba(0, 0, 0, 0.55);
+  }
+}
+
+/* Escolha manual pelo botão do cabeçalho (guardada no navegador). */
+:root[data-tema="escuro"] {
+  color-scheme: dark;
+  --cor-primaria: #1C7C78;
+  --cor-primaria-escura: #0C4A47;
+  --cor-apoio: #1A302E;
+  --cor-destaque: #F2A93B;
+  --cor-destaque-fundo: #3B2F12;
+  --cor-alerta: #F2A0A0;
+  --cor-alerta-fundo: #3C1E1E;
+  --cor-texto: #E8F0EE;
+  --cor-texto-suave: #A7B6B3;
+  --cor-fundo: #0E1616;
+  --cor-superficie: #162222;
+  --cor-borda: #334745;
+  --cor-foco: #8AB4F8;
+  --cor-texto-claro: #FFFFFF;
+  --cor-fundo-modal: rgba(0, 0, 0, 0.8);
+  --cor-link: #7FD6CF;
+  --cor-link-hover: #B2EAE5;
+  --cor-marca-hover: #FFF3D6;
+  --sombra-card: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --sombra-card-hover: 0 6px 16px rgba(0, 0, 0, 0.55);
+}
+
+/* Impressão sempre em cores claras, mesmo com o tema escuro ativo (papel branco, tinta escura). */
+@media print {
+  :root,
+  :root[data-tema="escuro"],
+  :root:not([data-tema="claro"]) {
+    color-scheme: light;
+    --cor-primaria: #0F5C5A;
+    --cor-primaria-escura: #0A4240;
+    --cor-apoio: #DCEFE6;
+    --cor-destaque-fundo: #FFF3D6;
+    --cor-alerta: #9B2C2C;
+    --cor-alerta-fundo: #FDECEC;
+    --cor-texto: #1F2A33;
+    --cor-texto-suave: #4A5963;
+    --cor-fundo: #F7F9F8;
+    --cor-superficie: #FFFFFF;
+    --cor-borda: #D5DEDA;
+    --cor-link: #0F5C5A;
+    --cor-link-hover: #0A4240;
+    --sombra-card: none;
+    --sombra-card-hover: none;
+  }
 }

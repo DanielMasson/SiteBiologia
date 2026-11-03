@@ -26,7 +26,7 @@
 }
 
 .botao--secundario {
-  color: var(--cor-primaria);
+  color: var(--cor-link);
   background-color: transparent;
 }
 
@@ -67,7 +67,7 @@ a.card:hover {
   padding: var(--esp-1) var(--esp-3);
   font-size: var(--tamanho-base);
   font-weight: bold;
-  color: var(--cor-primaria-escura);
+  color: var(--cor-link-hover);
   background-color: var(--cor-apoio);
   border-radius: var(--raio-pilula);
 }
@@ -148,7 +148,7 @@ a.card--link:focus-visible {
 .card__acao {
   display: inline-block;
   margin-top: var(--esp-3);
-  color: var(--cor-primaria);
+  color: var(--cor-link);
   font-weight: bold;
 }
 
@@ -325,7 +325,7 @@ a.card--link:focus-visible {
 }
 
 .passos li::marker {
-  color: var(--cor-primaria);
+  color: var(--cor-link);
   font-weight: bold;
 }
 
@@ -399,7 +399,7 @@ a.card--link:focus-visible {
 }
 
 .ficha-nav__rotulo {
-  color: var(--cor-primaria);
+  color: var(--cor-link);
   font-weight: bold;
 }
 

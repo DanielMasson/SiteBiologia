@@ -71,7 +71,35 @@ main {
 }
 
 .site-header__marca:hover {
-  color: var(--cor-destaque-fundo);
+  color: var(--cor-marca-hover);
+}
+
+/* Ações do cabeçalho: botão de tema e botão do menu */
+
+.site-header__acoes {
+  display: flex;
+  align-items: center;
+  gap: var(--esp-2);
+}
+
+.tema-botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: var(--esp-2);
+  font-size: var(--tamanho-h3);
+  line-height: 1;
+  color: var(--cor-texto-claro);
+  background-color: transparent;
+  border: 2px solid var(--cor-texto-claro);
+  border-radius: var(--raio-pequeno);
+  cursor: pointer;
+}
+
+.tema-botao[aria-pressed="true"] {
+  background-color: var(--cor-primaria-escura);
 }
 
 /* Menu mobile */
@@ -136,6 +164,10 @@ main {
 @media (min-width: 900px) {
   .menu-botao {
     display: none;
+  }
+
+  .site-header__acoes {
+    order: 3;
   }
 
   .site-header nav {

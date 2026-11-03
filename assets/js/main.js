@@ -29,10 +29,16 @@ function montarCabecalho() {
     '<header class="site-header">' +
       '<div class="container site-header__interno">' +
         '<a class="site-header__marca" href="index.html">Vermes que Importam</a>' +
-        '<button class="menu-botao" type="button" aria-expanded="false" aria-controls="menu-principal">' +
-          '<span class="sr-only">Abrir menu</span>' +
-          '<span aria-hidden="true">☰</span>' +
-        "</button>" +
+        '<div class="site-header__acoes">' +
+          '<button class="tema-botao" type="button" aria-pressed="false">' +
+            '<span class="sr-only">Modo escuro</span>' +
+            '<span aria-hidden="true">☾</span>' +
+          "</button>" +
+          '<button class="menu-botao" type="button" aria-expanded="false" aria-controls="menu-principal">' +
+            '<span class="sr-only">Abrir menu</span>' +
+            '<span aria-hidden="true">☰</span>' +
+          "</button>" +
+        "</div>" +
         '<nav aria-label="Principal">' +
           '<ul id="menu-principal" class="menu">' + itens + "</ul>" +
         "</nav>" +
@@ -120,6 +126,48 @@ function configurarMenu() {
   }
 }
 
+/* Tema claro/escuro: sem escolha guardada, vale o tema do sistema. */
+const CHAVE_TEMA = "vermes-tema";
+
+function temaEscuroAtivo() {
+  const escolha = document.documentElement.getAttribute("data-tema");
+  if (escolha === "escuro") return true;
+  if (escolha === "claro") return false;
+  return !!(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches);
+}
+
+function configurarTema() {
+  const botao = document.querySelector(".tema-botao");
+  if (!botao) return;
+
+  function mostrarEstado() {
+    botao.setAttribute("aria-pressed", temaEscuroAtivo() ? "true" : "false");
+  }
+
+  botao.addEventListener("click", function () {
+    const novo = temaEscuroAtivo() ? "claro" : "escuro";
+    document.documentElement.setAttribute("data-tema", novo);
+    try {
+      localStorage.setItem(CHAVE_TEMA, novo);
+    } catch (erro) {
+      /* Sem armazenamento: a escolha vale só até recarregar a página. */
+    }
+    mostrarEstado();
+  });
+
+  /* Se a pessoa nunca escolheu, acompanha mudanças do sistema. */
+  if (window.matchMedia) {
+    const consulta = window.matchMedia("(prefers-color-scheme: dark)");
+    const aoMudar = function () {
+      if (!document.documentElement.getAttribute("data-tema")) mostrarEstado();
+    };
+    if (consulta.addEventListener) consulta.addEventListener("change", aoMudar);
+    else if (consulta.addListener) consulta.addListener(aoMudar);
+  }
+
+  mostrarEstado();
+}
+
 function iniciar() {
   const alvoCabecalho = document.getElementById("cabecalho");
   const alvoRodape = document.getElementById("rodape");
@@ -128,6 +176,7 @@ function iniciar() {
   if (alvoRodape) alvoRodape.innerHTML = montarRodape();
 
   configurarMenu();
+  configurarTema();
 }
 
 document.addEventListener("DOMContentLoaded", iniciar);

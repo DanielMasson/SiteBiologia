@@ -24,7 +24,7 @@ Depois acesse <http://localhost:8000>.
 ├── data/                 # dados em JSON (doenças, galeria, referências)
 ├── assets/
 │   ├── css/              # tokens, base, layout, componentes
-│   ├── js/               # utils, main, verminoses, doenca, doencas-do-grupo, prevencao, galeria, sobre, qrcodes, qrcode-gerador
+│   ├── js/               # utils, main, verminoses, doenca, doencas-do-grupo, prevencao, galeria, sobre, qrcodes, qrcode-gerador, tema
 │   └── img/              # ciclos, galeria e logo
 └── documentacao/         # planejamento e instruções do projeto
 ```
@@ -65,6 +65,12 @@ Outras regras de consistência:
 
 1. Abra `data/referencias.json` e adicione um item com `id`, `titulo`, `instituicao`, `ano` e `url`.
 2. A página `sobre.html` lista todas as referências em ordem alfabética de título. Para vinculá-la a uma ficha, use o `id` em `referencias` da doença.
+
+## Tema claro e escuro
+
+O site segue o tema do sistema (claro ou escuro). O botão com a lua no cabeçalho alterna o tema, e a escolha fica guardada no navegador (`localStorage`, chave `vermes-tema`). Para mudar as cores, edite só os blocos de `assets/css/tokens.css`: o tema claro está em `:root` e o escuro aparece duas vezes (seguindo o sistema e pela escolha manual), então altere os dois. Ao imprimir, o site sempre usa cores claras.
+
+Regra para novos estilos: use `--cor-link` para texto colorido sobre a superfície e `--cor-primaria` apenas como fundo de elementos com texto `--cor-texto-claro`.
 
 ## Como publicar no GitHub Pages
 
