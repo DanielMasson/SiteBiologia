@@ -550,6 +550,108 @@ a.card--link:focus-visible {
   margin-block: var(--esp-4) var(--esp-5);
 }
 
+/* Quiz */
+
+.quiz__cartao {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-4);
+  max-width: var(--largura-texto);
+  padding: var(--esp-5);
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra-card);
+}
+
+.quiz__progresso {
+  color: var(--cor-texto-suave);
+  font-weight: bold;
+}
+
+.quiz__grupo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-3);
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.quiz__pergunta {
+  margin-bottom: var(--esp-3);
+  padding: 0;
+  font-family: var(--fonte-titulo);
+  font-size: var(--tamanho-h3);
+  font-weight: bold;
+}
+
+.quiz__opcao {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--esp-3);
+  min-height: 44px;
+  padding: var(--esp-3);
+  background-color: var(--cor-fundo);
+  border: 2px solid var(--cor-borda);
+  border-radius: var(--raio-pequeno);
+  cursor: pointer;
+}
+
+.quiz__opcao input {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-top: 0.15rem;
+  accent-color: var(--cor-primaria);
+}
+
+.quiz__opcao:focus-within {
+  outline: 3px solid var(--cor-foco);
+  outline-offset: 2px;
+}
+
+.quiz__opcao--certa {
+  border-color: var(--cor-primaria);
+  background-color: var(--cor-apoio);
+}
+
+.quiz__opcao--errada {
+  border-color: var(--cor-alerta);
+  background-color: var(--cor-alerta-fundo);
+}
+
+.quiz__feedback:empty {
+  display: none;
+}
+
+.quiz__feedback {
+  padding: var(--esp-3) var(--esp-4);
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-left: 4px solid var(--cor-borda);
+  border-radius: var(--raio-pequeno);
+}
+
+.quiz__feedback--certo {
+  border-left-color: var(--cor-primaria);
+}
+
+.quiz__feedback--errado {
+  border-left-color: var(--cor-alerta);
+}
+
+.quiz__feedback--aviso {
+  background-color: var(--cor-destaque-fundo);
+  border-left-color: var(--cor-destaque);
+}
+
+.quiz__placar {
+  font-size: var(--tamanho-h3);
+  font-weight: bold;
+}
+
 /* QR Codes (página de apoio da Mostra) */
 
 .qr-config {

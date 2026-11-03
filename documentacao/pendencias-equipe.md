@@ -33,6 +33,10 @@ As demais doenças da Fase 1 do planejamento (`esquistossomose`, `fasciolose`, `
 | `prevencao.html` | O que se aplica à realidade regional sobre água parada, rios, lagoas e caramujos. |
 | `index.html` | Três curiosidades verificadas, cada uma com fonte. Data e local da Mostra. |
 
+### Quiz (`data/quiz.json`)
+
+O mecanismo está pronto, mas o arquivo está vazio: nenhuma pergunta foi escrita de memória. A equipe escreve as perguntas e as explicações com base nas fontes das fichas e marca como `"validado"` depois da revisão. O formato e o passo para colocar o quiz no menu estão no README ("Como adicionar perguntas ao quiz").
+
 ## 2. Informações do projeto
 
 | Arquivo | O que falta |
@@ -51,7 +55,7 @@ Conferir também: a página Sobre diz "Instituto Federal Catarinense (IFC)". Con
 - Lista final de doenças da Fase 1.
 - **URL base de publicação** (GitHub Pages ou servidor do IFC). Ela é necessária para gerar os QR Codes finais em `qrcodes.html`.
 - Quem redige e valida cada ficha científica.
-- Quais recursos da Fase 2 entram na entrega (quiz, busca, modo escuro, mapa).
+- Quais recursos da Fase 2 entram na entrega. Prontos: busca e modo escuro. Pronto, mas sem perguntas: quiz. Não feito: mapa de incidência (depende de dados oficiais e de decisão da equipe).
 
 ## 4. Antes da Mostra
 

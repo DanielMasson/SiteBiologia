@@ -19,12 +19,12 @@ Depois acesse <http://localhost:8000>.
 ```
 .
 ├── index.html            # página inicial
-├── *.html                # demais páginas (grupos, verminoses, prevenção, galeria, sobre, qrcodes)
+├── *.html                # demais páginas (grupos, verminoses, prevenção, galeria, sobre, qrcodes, quiz)
 ├── 404.html
-├── data/                 # dados em JSON (doenças, galeria, referências)
+├── data/                 # dados em JSON (doenças, galeria, referências, quiz)
 ├── assets/
 │   ├── css/              # tokens, base, layout, componentes
-│   ├── js/               # utils, main, verminoses, doenca, doencas-do-grupo, prevencao, galeria, sobre, qrcodes, qrcode-gerador, tema
+│   ├── js/               # utils, main, verminoses, doenca, doencas-do-grupo, prevencao, galeria, sobre, qrcodes, qrcode-gerador, tema, quiz
 │   └── img/              # ciclos, galeria e logo
 └── documentacao/         # planejamento e instruções do projeto
 ```
@@ -65,6 +65,26 @@ Outras regras de consistência:
 
 1. Abra `data/referencias.json` e adicione um item com `id`, `titulo`, `instituicao`, `ano` e `url`.
 2. A página `sobre.html` lista todas as referências em ordem alfabética de título. Para vinculá-la a uma ficha, use o `id` em `referencias` da doença.
+
+## Como adicionar perguntas ao quiz
+
+A página `quiz.html` lê `data/quiz.json` (hoje vazio). Cada pergunta é um objeto:
+
+```json
+{
+  "id": "q-exemplo",
+  "pergunta": "Texto da pergunta?",
+  "alternativas": ["Opção A", "Opção B", "Opção C", "Opção D"],
+  "correta": 1,
+  "explicacao": "Por que essa é a resposta certa, com base nas fontes da equipe.",
+  "statusConteudo": "rascunho"
+}
+```
+
+- `correta` é a **posição** da alternativa certa, começando em 0 (no exemplo, `1` é a "Opção B"). Use de 2 a 6 alternativas.
+- Só perguntas com `"statusConteudo": "validado"` aparecem no site. Mantenha `"rascunho"` até a equipe de conteúdo conferir a pergunta e a explicação em fontes confiáveis.
+- Uma pergunta validada não pode ter `A_PREENCHER` nem campos vazios. Perguntas com erro de formato são ignoradas, e o motivo aparece no console do navegador.
+- A página **não está no menu** de propósito, para não mostrar um quiz vazio. Quando houver perguntas validadas, adicione `{ arquivo: "quiz.html", texto: "Quiz" }` à lista `PAGINAS_MENU` em `assets/js/main.js` e inclua `<li><a href="quiz.html">Quiz</a></li>` nos blocos `<noscript>` de cada página.
 
 ## Tema claro e escuro
 
