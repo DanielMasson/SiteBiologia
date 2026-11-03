@@ -51,6 +51,11 @@
           <button type="button" class="filtro__botao" data-grupo="nematelmintos" aria-pressed="false">Nematelmintos</button>
         </div>
 
+        <div class="campo">
+          <label class="campo__rotulo" for="busca">Buscar por nome, agente, sintoma ou prevenção</label>
+          <input class="campo__entrada" type="search" id="busca" name="busca" autocomplete="off" spellcheck="false">
+        </div>
+
         <p id="resultado-filtro" class="sr-only" aria-live="polite"></p>
         <p class="estado-mensagem" id="lista-estado" role="status">Carregando...</p>
         <div id="lista-doencas" class="grade grade--3"></div>

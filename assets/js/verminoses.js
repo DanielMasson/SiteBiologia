@@ -1,4 +1,4 @@
-/* Lista de verminoses gerada a partir de data/doencas.json, com filtro por filo. */
+/* Lista de verminoses gerada a partir de data/doencas.json, com filtro por filo e busca por texto. */
 
 const GRUPOS_FILO = {
   platelmintos: "Platelmintos",
@@ -12,19 +12,30 @@ function iniciarVerminoses() {
   const estado = document.getElementById("lista-estado");
   const resultadoFiltro = document.getElementById("resultado-filtro");
   const botoes = Array.prototype.slice.call(document.querySelectorAll(".filtro__botao"));
+  const campoBusca = document.getElementById("busca");
   let doencas = [];
+  let grupoAtual = "todos";
 
   function grupoAtualDaURL() {
     const valor = new URLSearchParams(location.search).get("grupo");
     return GRUPOS_FILO[valor] ? valor : "todos";
   }
 
-  function atualizarURL(grupo) {
+  function termoDaURL() {
+    return new URLSearchParams(location.search).get("q") || "";
+  }
+
+  function atualizarURL(grupo, termo) {
     const url = new URL(location.href);
     if (grupo === "todos") {
       url.searchParams.delete("grupo");
     } else {
       url.searchParams.set("grupo", grupo);
+    }
+    if (termo.trim() === "") {
+      url.searchParams.delete("q");
+    } else {
+      url.searchParams.set("q", termo.trim());
     }
     history.replaceState(null, "", url);
   }
@@ -34,12 +45,15 @@ function iniciarVerminoses() {
   }
 
   function aplicarFiltro(grupo, atualizarURLDaPagina) {
+    grupoAtual = grupo;
+    const termo = campoBusca ? campoBusca.value : "";
+    const termoNormalizado = normalizarTexto(termo);
     const filoEsperado = GRUPOS_FILO[grupo];
-    const filtradas = filoEsperado
-      ? doencas.filter(function (doenca) {
-          return nomeFilo(doenca.filo) === filoEsperado;
-        })
-      : doencas;
+
+    const filtradas = doencas.filter(function (doenca) {
+      if (filoEsperado && nomeFilo(doenca.filo) !== filoEsperado) return false;
+      return termoNormalizado === "" || textoBuscavel(doenca).indexOf(termoNormalizado) !== -1;
+    });
 
     lista.textContent = "";
     filtradas.forEach(function (doenca) {
@@ -48,14 +62,18 @@ function iniciarVerminoses() {
 
     let mensagemVazia = document.getElementById("lista-vazia");
     if (filtradas.length === 0) {
+      const texto =
+        termoNormalizado !== ""
+          ? "Nenhuma doença encontrada para essa busca. Tente outra palavra ou limpe o campo."
+          : "Nenhuma doença cadastrada neste grupo ainda.";
       if (!mensagemVazia) {
         mensagemVazia = criarElemento("p", {
           classe: "estado-mensagem",
-          texto: "Nenhuma doença cadastrada neste grupo ainda.",
           atributos: { id: "lista-vazia" }
         });
         lista.insertAdjacentElement("afterend", mensagemVazia);
       }
+      mensagemVazia.textContent = texto;
     } else if (mensagemVazia) {
       mensagemVazia.remove();
     }
@@ -65,7 +83,7 @@ function iniciarVerminoses() {
     });
 
     if (resultadoFiltro) resultadoFiltro.textContent = textoContagem(filtradas.length);
-    if (atualizarURLDaPagina) atualizarURL(grupo);
+    if (atualizarURLDaPagina) atualizarURL(grupo, termo);
   }
 
   function mostrarErro() {
@@ -79,6 +97,13 @@ function iniciarVerminoses() {
     });
   });
 
+  if (campoBusca) {
+    campoBusca.addEventListener("input", function () {
+      if (doencas.length === 0) return; /* dados ainda não carregaram */
+      aplicarFiltro(grupoAtual, true);
+    });
+  }
+
   carregarJSON("data/doencas.json")
     .then(function (dados) {
       doencas = ordenarPorNome(dados);
@@ -89,6 +114,7 @@ function iniciarVerminoses() {
         }
       });
       if (estado) estado.remove();
+      if (campoBusca) campoBusca.value = termoDaURL();
       aplicarFiltro(grupoAtualDaURL(), false);
     })
     .catch(function (erro) {

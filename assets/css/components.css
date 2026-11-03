@@ -544,6 +544,12 @@ a.card--link:focus-visible {
   color: var(--cor-texto-suave);
 }
 
+/* Busca na lista de verminoses: afasta o campo dos botões de filtro e da lista. */
+
+.filtro + .campo {
+  margin-block: var(--esp-4) var(--esp-5);
+}
+
 /* QR Codes (página de apoio da Mostra) */
 
 .qr-config {

@@ -175,3 +175,30 @@ function montarErroCarregamento(estado) {
   });
   estado.insertAdjacentElement("afterend", botao);
 }
+
+/* Busca textual: remove acentos e maiúsculas para comparar "teniase" com "Teníase". */
+function normalizarTexto(texto) {
+  return String(texto === null || texto === undefined ? "" : texto)
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase()
+    .trim();
+}
+
+/* Junta os textos da ficha que a busca consulta, ignorando campos pendentes (A_PREENCHER). */
+function textoBuscavel(doenca) {
+  const partes = [doenca.nomePopular, nomeFilo(doenca.filo), doenca.classe];
+  [doenca.agentes, doenca.sintomas, doenca.prevencao].forEach(function (lista) {
+    if (Array.isArray(lista)) partes.push.apply(partes, lista);
+  });
+  [doenca.resumo, doenca.hospedeiroDefinitivo, doenca.hospedeiroIntermediario, doenca.transmissao].forEach(function (texto) {
+    if (!ehPendente(texto)) partes.push(texto);
+  });
+  return normalizarTexto(
+    partes
+      .filter(function (parte) {
+        return typeof parte === "string" && !ehPendente(parte);
+      })
+      .join(" ")
+  );
+}
