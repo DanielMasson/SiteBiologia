@@ -7,7 +7,8 @@ const PAGINAS_MENU = [
   { arquivo: "verminoses.html", texto: "Verminoses" },
   { arquivo: "prevencao.html", texto: "Prevenção" },
   { arquivo: "galeria.html", texto: "Galeria" },
-  { arquivo: "sobre.html", texto: "Sobre" }
+  { arquivo: "sobre.html", texto: "Sobre" },
+  { arquivo: "quiz.html", texto: "Quiz" }
 ];
 
 function nomeDaPagina() {
@@ -55,8 +56,8 @@ function montarRodape() {
         '<div class="site-footer__grade">' +
           "<div>" +
             "<p><strong>Vermes que Importam</strong></p>" +
-            /* A_PREENCHER: informar campus e turma, ex.: "Campus X — Turma Y". */
-            "<p>Projeto desenvolvido por estudantes do Curso Técnico em Informática para Internet, IFC. (" + ano + ")</p>" +
+            /* A_PREENCHER (opcional): turma, ex.: "Turma 2A". */
+            "<p>Projeto desenvolvido por estudantes do Curso Técnico em Informática para Internet, IFC Campus Concordia. (" + ano + ")</p>" +
           "</div>" +
           "<div>" +
             '<p><strong>Atalhos</strong></p>' +

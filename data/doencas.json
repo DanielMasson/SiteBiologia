@@ -6,15 +6,141 @@
     "agentes": ["Taenia solium", "Taenia saginata"],
     "filo": "Platyhelminthes",
     "classe": "Cestoda",
-    "resumo": "A_PREENCHER",
+    "resumo": "A teníase e a cisticercose são duas faces da mesma infecção por tênias: na teníase, o verme adulto vive no intestino; na cisticercose, as larvas se instalam nos tecidos. No Brasil, as principais espécies são a Taenia solium, ligada ao porco, e a Taenia saginata, ligada ao boi.",
     "hospedeiroDefinitivo": "Ser humano",
-    "hospedeiroIntermediario": "A_PREENCHER",
-    "transmissao": "A_PREENCHER",
-    "cicloDeVida": ["A_PREENCHER"],
+    "hospedeiroIntermediario": "Porco (T. solium) e boi (T. saginata)",
+    "transmissao": "A teníase é adquirida ao comer carne de porco ou de boi crua ou mal cozida com larvas da tênia; a cisticercose, ao ingerir ovos do verme em água, alimentos ou solo contaminados por fezes de pessoas infectadas.",
+    "cicloDeVida": [
+      "A pessoa com teníase elimina nas fezes segmentos do verme (proglotes) cheios de ovos da tênia.",
+      "Os ovos contaminam o solo, a água, as verduras e o pasto.",
+      "O boi ingere os ovos ao pastar e o porco ao comer alimentos contaminados; dentro do animal, os ovos viram larvas (cisticercos) nos músculos.",
+      "A pessoa come carne de boi ou de porco crua ou mal cozida com cisticercos e a larva se fixa no intestino, onde se torna o verme adulto (teníase).",
+      "Também é possível ingerir os ovos em água, alimentos ou solo contaminados; nesse caso, as larvas se instalam nos tecidos, como músculos, olhos e cérebro (cisticercose).",
+      "No intestino, o verme adulto libera novos segmentos com ovos, e o ciclo recomeça."
+    ],
     "imagemCiclo": null,
-    "sintomas": ["A_PREENCHER"],
-    "prevencao": ["A_PREENCHER"],
-    "referencias": []
+    "sintomas": [
+      "Na teníase, pode não haver sintomas ou surgir dor de barriga, gases, náusea e perda de peso.",
+      "Às vezes a pessoa percebe a saída de pedaços do verme nas fezes.",
+      "Quando as larvas se instalam no cérebro (neurocisticercose): dores de cabeça frequentes, convulsões e confusão mental.",
+      "Larvas nos músculos podem causar inchaço, inflamação e dificuldade de movimentação.",
+      "A cisticercose ocular pode levar à cegueira."
+    ],
+    "prevencao": [
+      "Coma carne e embutidos bem cozidos, bem fritos ou bem assados e compre carnes com selo de inspeção.",
+      "Lave muito bem frutas e verduras cruas e use apenas água fervida, filtrada ou tratada para beber.",
+      "Lave as mãos antes das refeições, ao preparar alimentos e sempre depois de ir ao banheiro.",
+      "Faça uso correto do sanitário, nunca defeque ao ar livre e não use água contaminada para molhar a horta.",
+      "Crie porcos fechados em chiqueiros, longe das fezes humanas."
+    ],
+    "referencias": ["sesa-pr-teniase-cisticercose-2018", "ms-guia-bolso-2006"]
+  },
+  {
+    "id": "esquistossomose",
+    "statusConteudo": "rascunho",
+    "nomePopular": "Esquistossomose",
+    "agentes": ["Schistosoma mansoni"],
+    "filo": "Platyhelminthes",
+    "classe": "Trematoda",
+    "resumo": "A esquistossomose, conhecida como barriga d'água ou doença dos caramujos, é causada pelo verme Schistosoma mansoni e está ligada ao saneamento precário. A pessoa se infecta ao entrar em contato com água doce contaminada por cercárias, larvas que saem dos caramujos infectados.",
+    "hospedeiroDefinitivo": "Ser humano",
+    "hospedeiroIntermediario": "Caramujos de água doce do gênero Biomphalaria",
+    "transmissao": "A pessoa se infecta ao entrar em contato com água doce contaminada, onde as cercárias do verme penetram pela pele.",
+    "cicloDeVida": [
+      "A pessoa infectada elimina ovos do verme nas fezes, que chegam a rios, lagos e riachos.",
+      "No contato com a água, os ovos liberam larvas ciliadas chamadas miracídios, que infectam os caramujos.",
+      "Dentro dos caramujos, as larvas se multiplicam e, em algumas semanas, saem para a água na forma de cercárias.",
+      "As cercárias penetram pela pele de quem entra na água e se transformam em esquistossômulos.",
+      "Os esquistossômulos chegam ao fígado, onde amadurecem, e migram depois para as veias do intestino.",
+      "No intestino, os vermes adultos se acasalam e produzem ovos, que saem nas fezes e recomeçam o ciclo."
+    ],
+    "imagemCiclo": null,
+    "sintomas": [
+      "Na entrada pela pele, pode aparecer coceira e micropápulas vermelhas.",
+      "Duas a seis semanas depois, podem surgir febre, dor de cabeça, calafrios, fraqueza e falta de apetite.",
+      "Muitas pessoas não apresentam nenhum sintoma.",
+      "Na fase crônica, aparecem diarreia às vezes com sangue, emagrecimento e aumento do fígado e do baço.",
+      "Nos casos graves, o abdômen cresce, formando a barriga d'água, e podem ocorrer hemorragia digestiva e hipertensão no fígado."
+    ],
+    "prevencao": [
+      "Evite o contato com rios, lagoas, córregos e represas onde haja caramujos e possível contaminação por fezes e esgoto.",
+      "Use botas e calçados que impeçam o contato com a água, principalmente em enchentes e no trabalho no campo.",
+      "Não lave roupas nem louças em águas potencialmente contaminadas.",
+      "Apoie a instalação de esgoto e de saneamento básico nas comunidades.",
+      "Participe das ações de educação em saúde e participação comunitária da sua região."
+    ],
+    "referencias": ["ms-esquistossomose", "ms-vigilancia-esquistossomose-2024", "ms-folder-esquistossomose-2021", "dive-sc-esquistossomose-2012"]
+  },
+  {
+    "id": "fasciolose",
+    "statusConteudo": "rascunho",
+    "nomePopular": "Fasciolose",
+    "agentes": ["Fasciola hepatica"],
+    "filo": "Platyhelminthes",
+    "classe": "Trematoda",
+    "resumo": "A fasciolose é causada por um verme que se instala nos ductos biliares do fígado, sobretudo de ovinos e bovinos; o ser humano é um hospedeiro acidental. A infecção humana acontece ao ingerir plantas aquáticas ou água contaminadas com larvas do parasito.",
+    "hospedeiroDefinitivo": "Ovinos e bovinos; ocasionalmente, o ser humano",
+    "hospedeiroIntermediario": "Caramujos de água doce",
+    "transmissao": "A pessoa se infecta ao ingerir água ou plantas aquáticas e semiaquáticas cruas ou malpassadas que estejam contaminadas com larvas do parasito.",
+    "cicloDeVida": [
+      "Os ovos do verme saem nas fezes de ovinos e bovinos e chegam à água.",
+      "Na água, os ovos liberam larvas que infectam os caramujos, os hospedeiros intermediários.",
+      "Dentro dos caramujos, o parasito se multiplica e volta para a água na forma de cercárias.",
+      "As larvas contaminam a água e as plantas aquáticas e semiaquáticas que crescem ou são irrigadas por ela.",
+      "A pessoa ou o animal ingere essas plantas ou essa água e as larvas migram para o fígado.",
+      "No fígado, as larvas amadurecem nos ductos biliares e passam a produzir ovos, que saem nas fezes e recomeçam o ciclo."
+    ],
+    "imagemCiclo": null,
+    "sintomas": [
+      "Na fase inicial, podem surgir febre, dor abdominal e aumento do fígado.",
+      "Na fase crônica, o verme obstrui os ductos biliares e pode causar icterícia, com pele e olhos amarelados.",
+      "A infecção longa pode levar a lesões e fibrose no fígado.",
+      "Muitas pessoas não apresentam sintomas.",
+      "Os sintomas se parecem com os de outras doenças do fígado, o que dificulta o reconhecimento."
+    ],
+    "prevencao": [
+      "Não coma plantas aquáticas e semiaquáticas, como agrião, cruas ou malpassadas; cozinhe bem as verduras.",
+      "Beba apenas água tratada, fervida ou filtrada.",
+      "Lave bem verduras, frutas e hortaliças com água própria para consumo.",
+      "Melhore o saneamento para que fezes de animais e de pessoas não contaminem a água das hortas.",
+      "Mantenha o gado afastado de áreas alagadas e acompanhe os rebanhos com apoio veterinário."
+    ],
+    "referencias": ["opas-fasciolose-diretrizes-2024", "oms-fascioliasis-qa", "opas-fasciolose-investimentos"]
+  },
+  {
+    "id": "hidatidose",
+    "statusConteudo": "rascunho",
+    "nomePopular": "Hidatidose",
+    "agentes": ["Echinococcus granulosus", "Echinococcus vogeli", "Echinococcus oligarthra"],
+    "filo": "Platyhelminthes",
+    "classe": "Cestoda",
+    "resumo": "A hidatidose é uma doença parasitária causada por vermes do gênero Echinococcus, que formam cistos principalmente no fígado e nos pulmões. No Brasil, ela aparece em duas formas: a cística, causada pelo Echinococcus granulosus, e a neotropical, causada pelo Echinococcus vogeli e pelo Echinococcus oligarthra.",
+    "hospedeiroDefinitivo": "Cães e outros canídeos",
+    "hospedeiroIntermediario": "Ovinos, bovinos e o ser humano (acidental)",
+    "transmissao": "A pessoa se infecta ao ingerir ovos do parasito presentes em fezes de cães ou em alimentos, água e solo contaminados.",
+    "cicloDeVida": [
+      "O verme adulto vive no intestino dos cães, que eliminam ovos nas fezes.",
+      "Os ovos contaminam o solo, a água e as hortaliças.",
+      "Ovinos e bovinos ingerem os ovos ao pastar e, dentro deles, as larvas formam cistos, sobretudo no fígado e nos pulmões.",
+      "O cão volta a se infectar ao comer vísceras cruas de animais abatidos que tenham cistos.",
+      "A pessoa ingere os ovos de forma acidental, ao manipular cães, terra ou alimentos contaminados.",
+      "Na pessoa, as larvas migram pelo sangue e formam cistos, principalmente no fígado e nos pulmões; ela não transmite a doença adiante."
+    ],
+    "imagemCiclo": null,
+    "sintomas": [
+      "Na maioria das pessoas, o cisto se forma sem sintomas por muitos anos.",
+      "Com o crescimento do cisto no fígado: dor abdominal, icterícia e aumento do abdômen.",
+      "Com o cisto no pulmão: tosse, dor no peito e falta de ar.",
+      "O cisto pode provocar perda de peso e febre.",
+      "Se o cisto romper, podem ocorrer reação alérgica grave e outros problemas sérios."
+    ],
+    "prevencao": [
+      "Evite o contato direto com as fezes de cães e lave bem as mãos depois de mexer com o animal, com terra ou plantações.",
+      "Lave bem frutas, legumes e hortaliças antes de comer.",
+      "Não dê vísceras cruas aos cães e destine as vísceras de forma adequada no abate de animais.",
+      "O controle dos cães e a higiene no abate de animais ajudam a reduzir a transmissão da doença."
+    ],
+    "referencias": ["ms-hidatidose-qa-2022", "oms-echinococcosis-2021"]
   },
   {
     "id": "ascaridiase",
@@ -23,14 +149,213 @@
     "agentes": ["Ascaris lumbricoides"],
     "filo": "Nematoda",
     "classe": null,
-    "resumo": "A_PREENCHER",
+    "resumo": "A ascaridíase é uma verminose intestinal causada pelo verme Ascaris lumbricoides, conhecido como lombriga. O verme vive no intestino delgado e a doença é mais comum em lugares com pouca higiene e saneamento básico precário.",
     "hospedeiroDefinitivo": "Ser humano",
     "hospedeiroIntermediario": null,
-    "transmissao": "A_PREENCHER",
-    "cicloDeVida": ["A_PREENCHER"],
+    "transmissao": "A pessoa adquire a doença ao engolir ovos do verme que estão em água, alimentos crus mal lavados ou mãos sujas.",
+    "cicloDeVida": [
+      "Os ovos do verme saem nas fezes e chegam ao solo.",
+      "No ambiente, os ovos se tornam infectantes.",
+      "A pessoa engole esses ovos ao comer alimentos crus mal lavados ou beber água contaminada.",
+      "No intestino, as larvas se libertam e migram pelo fígado e pelos pulmões.",
+      "As larvas seguem para os pulmões e depois voltam ao intestino, onde se tornam vermes adultos.",
+      "Os vermes adultos se reproduzem e os ovos saem novamente nas fezes."
+    ],
     "imagemCiclo": null,
-    "sintomas": ["A_PREENCHER"],
-    "prevencao": ["A_PREENCHER"],
-    "referencias": []
+    "sintomas": [
+      "Na maioria das vezes, a pessoa não sente nada.",
+      "Dor abdominal e cólicas.",
+      "Perda de apetite e diarreia.",
+      "Tosse e febre na fase inicial, quando as larvas migram pelos pulmões.",
+      "Em infecções intensas, pode haver perda de peso e obstrução do intestino."
+    ],
+    "prevencao": [
+      "Lavar bem frutas, verduras e legumes antes de comer.",
+      "Lavar as mãos com sabonete antes de comer e depois de usar o banheiro.",
+      "Beber apenas água tratada ou filtrada.",
+      "Cozinhar bem os alimentos antes de comer.",
+      "Usar banheiro e evitar que as fezes contaminem o solo."
+    ],
+    "referencias": ["ms-geo-helmintiase", "ms-guia-pratico-geohelmintiases", "ms-guia-bolso-2010"]
+  },
+  {
+    "id": "ancilostomose",
+    "statusConteudo": "rascunho",
+    "nomePopular": "Ancilostomose",
+    "agentes": ["Ancylostoma duodenale", "Necator americanus"],
+    "filo": "Nematoda",
+    "classe": null,
+    "resumo": "A ancilostomose é causada por dois vermes: Ancylostoma duodenale e Necator americanus. Também é chamada de amarelão, porque a anemia pode deixar a pele pálida. Os vermes se prendem no intestino e se alimentam de sangue.",
+    "hospedeiroDefinitivo": "Ser humano",
+    "hospedeiroIntermediario": null,
+    "transmissao": "A transmissão ocorre quando as larvas do verme penetram na pele, principalmente dos pés, em contato com solo contaminado.",
+    "cicloDeVida": [
+      "Os ovos saem nas fezes e chegam ao solo.",
+      "No solo, as larvas se desenvolvem e se tornam infectantes.",
+      "As larvas penetram na pele, geralmente pelos pés descalços.",
+      "Pelo sangue, as larvas chegam aos pulmões e sobem até a garganta.",
+      "A pessoa engole as larvas, que chegam ao intestino delgado.",
+      "No intestino, os vermes amadurecem e produzem ovos, que saem nas fezes."
+    ],
+    "imagemCiclo": null,
+    "sintomas": [
+      "Na maioria das vezes, a pessoa não sente nada.",
+      "Anemia, que causa palidez e fraqueza.",
+      "Dor abdominal, náuseas e diarreia.",
+      "Coceira e pontos inflamados na pele, chamados de coceira da terra.",
+      "Cansaço e, em crianças, atraso no desenvolvimento."
+    ],
+    "prevencao": [
+      "Usar calçados ao andar em terrenos de terra ou no campo.",
+      "Lavar bem as mãos antes de comer e depois de usar o banheiro.",
+      "Usar banheiro e evitar que as fezes contaminem o solo.",
+      "Beber apenas água tratada ou filtrada.",
+      "Evitar andar descalço em áreas sem saneamento."
+    ],
+    "referencias": ["ms-geo-helmintiase", "ms-guia-pratico-geohelmintiases", "ms-guia-bolso-2010"]
+  },
+  {
+    "id": "oxiuriase",
+    "statusConteudo": "rascunho",
+    "nomePopular": "Oxiuríase",
+    "agentes": ["Enterobius vermicularis"],
+    "filo": "Nematoda",
+    "classe": null,
+    "resumo": "A oxiuríase é causada pelo verme Enterobius vermicularis, conhecido como oxiúro. É uma das verminoses mais comuns entre crianças em idade escolar. O principal sinal é a coceira forte no ânus, principalmente à noite.",
+    "hospedeiroDefinitivo": "Ser humano",
+    "hospedeiroIntermediario": null,
+    "transmissao": "A contaminação acontece ao engolir ovos do verme que estão nas mãos, na roupa, na cama ou na poeira do ambiente.",
+    "cicloDeVida": [
+      "Os vermes vivem no final do intestino, perto do ânus.",
+      "Durante a noite, a fêmea sai e deposita ovos na região anal.",
+      "Os ovos passam para a roupa, a cama e a poeira do ambiente.",
+      "A pessoa engole ou inala os ovos, muitas vezes levando a mão suja à boca.",
+      "No corpo, a larva se desenvolve e se torna verme adulto no intestino.",
+      "Os vermes se acasalam e o ciclo recomeça."
+    ],
+    "imagemCiclo": null,
+    "sintomas": [
+      "Coceira forte no ânus, principalmente à noite.",
+      "Irritabilidade e sono agitado.",
+      "Dores abdominais e perda de apetite.",
+      "Náuseas em algumas pessoas.",
+      "Feridas na região anal por causa do coçar."
+    ],
+    "prevencao": [
+      "Lavar bem as mãos com sabonete, principalmente depois de usar o banheiro e antes de comer.",
+      "Manter as unhas aparadas e evitar levar as mãos à boca.",
+      "Trocar diariamente a roupa de cama, a roupa íntima e as toalhas.",
+      "Não coçar a região anal por baixo das roupas.",
+      "Manter os banheiros e o quarto limpos."
+    ],
+    "referencias": ["ms-guia-bolso-2010", "fiocruz-oxiuriase", "bvs-parasitoses-intestinais-2005"]
+  },
+  {
+    "id": "tricuriase",
+    "statusConteudo": "rascunho",
+    "nomePopular": "Tricuríase",
+    "agentes": ["Trichuris trichiura"],
+    "filo": "Nematoda",
+    "classe": null,
+    "resumo": "A tricuríase é causada pelo verme Trichuris trichiura. O verme tem o corpo afilado na frente e grosso atrás, com aspecto de chicote. Ele vive no intestino grosso e a doença é mais comum em crianças.",
+    "hospedeiroDefinitivo": "Ser humano",
+    "hospedeiroIntermediario": null,
+    "transmissao": "A pessoa adquire a doença ao engolir ovos do verme presentes em água ou alimentos crus contaminados.",
+    "cicloDeVida": [
+      "Os ovos do verme saem nas fezes e chegam ao solo.",
+      "No solo, os ovos ficam embrionados e se tornam infectantes.",
+      "A pessoa ingere esses ovos com água contaminada ou alimentos crus mal lavados.",
+      "No estômago ou no duodeno, os ovos eclodem e liberam as larvas.",
+      "As larvas migram até o ceco e se tornam vermes adultos no intestino grosso.",
+      "Os vermes se acasalam e as fêmeas depositam ovos, que saem nas fezes."
+    ],
+    "imagemCiclo": null,
+    "sintomas": [
+      "Na maioria das vezes, a pessoa não sente nada.",
+      "Dor abdominal e diarreia.",
+      "Perda de apetite e fraqueza.",
+      "Febre e tosse na fase inicial da infecção.",
+      "Em infecções intensas, pode ocorrer prolapso retal."
+    ],
+    "prevencao": [
+      "Lavar bem as mãos com sabonete antes de comer e depois de usar o banheiro.",
+      "Lavar bem frutas, verduras e legumes antes de comer.",
+      "Beber apenas água tratada ou filtrada.",
+      "Usar banheiro e evitar que as fezes contaminem o solo.",
+      "Dar destino correto ao lixo e aos dejetos humanos."
+    ],
+    "referencias": ["ms-geo-helmintiase", "ms-guia-pratico-geohelmintiases", "opas-geohelmintiasis"]
+  },
+  {
+    "id": "filariose",
+    "statusConteudo": "rascunho",
+    "nomePopular": "Filariose linfática",
+    "agentes": ["Wuchereria bancrofti"],
+    "filo": "Nematoda",
+    "classe": null,
+    "resumo": "A filariose linfática é causada por vermes que vivem nos vasos linfáticos e é conhecida como elefantíase. Nas Américas, o único agente é Wuchereria bancrofti, transmitido por mosquitos do gênero Culex. A maioria das infecções não dá sintomas, mas o verme pode danificar o sistema linfático.",
+    "hospedeiroDefinitivo": "Ser humano",
+    "hospedeiroIntermediario": null,
+    "transmissao": "A doença se espalha quando um mosquito infectado pica a pessoa e deposita larvas do verme na pele.",
+    "cicloDeVida": [
+      "O mosquito Culex pica uma pessoa infectada e engole microfilárias que circulam no sangue.",
+      "Dentro do mosquito, as microfilárias amadurecem e viram larvas infectantes.",
+      "Ao picar uma pessoa saudável, o mosquito deposita essas larvas na pele.",
+      "As larvas entram no corpo e migram para os vasos linfáticos.",
+      "Em cerca de um ano, as larvas se tornam vermes adultos machos e fêmeas.",
+      "As fêmeas liberam novas microfilárias no sangue, em maior quantidade entre 22h e 2h."
+    ],
+    "imagemCiclo": null,
+    "sintomas": [
+      "Na maioria das vezes, a infecção não apresenta sintomas.",
+      "Episódios repetidos de febre com dor e inchaço dos gânglios e dos vasos linfáticos.",
+      "Inflamação no aparelho genital masculino.",
+      "Inchaço persistente nos braços e nas pernas, causado por acúmulo de linfa (linfedema).",
+      "Espessamento e endurecimento da pele com aumento do volume do membro (elefantíase).",
+      "Acúmulo de líquido no escroto (hidrocele), com exclusão social e estigma."
+    ],
+    "prevencao": [
+      "Usar mosquiteiros e telas nas janelas e nas portas das casas.",
+      "Eliminar criadouros de mosquitos perto de casa e de trabalho.",
+      "Aplicar inseticida em latrinas abertas.",
+      "Melhorar as condições de saneamento básico."
+    ],
+    "referencias": ["opas-filariose-linfatica"]
+  },
+  {
+    "id": "estrongiloidiase",
+    "statusConteudo": "rascunho",
+    "nomePopular": "Estrongiloidíase",
+    "agentes": ["Strongyloides stercoralis"],
+    "filo": "Nematoda",
+    "classe": null,
+    "resumo": "A estrongiloidíase é uma verminose causada pelo verme Strongyloides stercoralis e é frequentemente assintomática. O verme pode completar o ciclo no solo ou dentro do próprio corpo humano. Por isso, a infecção pode se manter por muito tempo na pessoa.",
+    "hospedeiroDefinitivo": "Ser humano",
+    "hospedeiroIntermediario": null,
+    "transmissao": "As larvas infectantes que estão na terra úmida e nos excrementos entram pela pele da pessoa.",
+    "cicloDeVida": [
+      "As larvas infectantes que estão na terra úmida entram pela pele da pessoa.",
+      "Elas viajam pelo sangue até os pulmões.",
+      "Sobem pelas vias respiratórias até a garganta e são engolidas.",
+      "Chegam ao intestino e se tornam fêmeas adultas.",
+      "As fêmeas produzem ovos e larvas, que podem sair nas fezes.",
+      "No corpo, algumas larvas se transformam em formas infectantes de novo e reentram no intestino, causando autoinfecção."
+    ],
+    "imagemCiclo": null,
+    "sintomas": [
+      "Na maioria das vezes, a pessoa não sente nada.",
+      "Coceira e vermelhidão na pele onde as larvas entraram.",
+      "Manchas que coçam na pele (urticária).",
+      "Dor abdominal e diarreia.",
+      "Náuseas, vômitos e perda de peso.",
+      "Fraqueza."
+    ],
+    "prevencao": [
+      "Usar sapatos ao andar em áreas com terra úmida.",
+      "Usar banheiro e dispor as fezes de forma sanitária.",
+      "Lavar bem as mãos e manter hábitos de higiene rigorosos.",
+      "Evitar o contato da pele com terra possivelmente contaminada."
+    ],
+    "referencias": ["cve-sp-estrongiloidiase-2003", "opas-soil-transmitted-helminthiasis"]
   }
 ]

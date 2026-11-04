@@ -1,1 +1,106 @@
-[]
+[
+  {
+    "id": "q-esquistossomose-agente",
+    "pergunta": "Qual verme causa a esquistossomose?",
+    "alternativas": [
+      "Ascaris lumbricoides",
+      "Schistosoma mansoni",
+      "Taenia solium",
+      "Enterobius vermicularis"
+    ],
+    "correta": 1,
+    "explicacao": "A esquistossomose é causada pelo trematódeo Schistosoma mansoni. A pessoa se infecta ao entrar em contato com água doce contaminada por cercárias, larvas que saem dos caramujos infectados (Ministério da Saúde).",
+    "statusConteudo": "validado"
+  },
+  {
+    "id": "q-ancilostomose-transmissao",
+    "pergunta": "Como a pessoa costuma adquirir a ancilostomose?",
+    "alternativas": [
+      "Ao entrar em contato com água doce contaminada",
+      "Ao comer carne de porco malpassada",
+      "Ao pisar descalça em solo com larvas infectantes",
+      "Ao ser picada por um mosquito"
+    ],
+    "correta": 2,
+    "explicacao": "As larvas dos ancilóstomos estão no solo contaminado e penetraram na pele, principalmente dos pés. Por isso, usar calçados é a principal medida de prevenção (Ministério da Saúde).",
+    "statusConteudo": "validado"
+  },
+  {
+    "id": "q-oxiuriase-sinal",
+    "pergunta": "Qual é o principal sinal da oxiuríase?",
+    "alternativas": [
+      "Dor forte no peito",
+      "Coceira forte no ânus, principalmente à noite",
+      "Aumento do abdômen",
+      "Inchaço das pernas"
+    ],
+    "correta": 1,
+    "explicacao": "Durante a noite, a fêmea do oxiúro sai e deposita ovos na região anal, o que causa coceira forte. Por isso, higiene das mãos, unhas aparadas e troca diária da roupa de cama ajudam a evitar a doença (Fiocruz Minas).",
+    "statusConteudo": "validado"
+  },
+  {
+    "id": "q-teniase-prevencao",
+    "pergunta": "Qual hábito ajuda a evitar a teníase?",
+    "alternativas": [
+      "Comer carne de porco e de boi bem cozida",
+      "Beber água de rio sem tratar",
+      "Andar descalço no campo",
+      "Não lavar as frutas antes de comer"
+    ],
+    "correta": 0,
+    "explicacao": "A teníase é adquirida ao comer carne de porco ou de boi crua ou mal cozida com larvas da tênia. Cozinhar bem a carne e comprar carnes com inspeção são as principais medidas (Ministério da Saúde).",
+    "statusConteudo": "validado"
+  },
+  {
+    "id": "q-hidatidose-hospedeiro",
+    "pergunta": "Qual animal é o hospedeiro definitivo da hidatidose?",
+    "alternativas": [
+      "O cão",
+      "O boi",
+      "O caramujo",
+      "O mosquito"
+    ],
+    "correta": 0,
+    "explicacao": "O verme adulto do gênero Echinococcus vive no intestino dos cães, que eliminam ovos nas fezes. A pessoa se infecta ao ingerir esses ovos por acidente, manipulando o animal, a terra ou alimentos contaminados (Ministério da Saúde).",
+    "statusConteudo": "validado"
+  },
+  {
+    "id": "q-filariose-vetor",
+    "pergunta": "Como a filariose linfática é transmitida?",
+    "alternativas": [
+      "Por água e alimentos contaminados",
+      "Por mosquitos infectados que picam a pessoa",
+      "Por solo com larvas infectantes",
+      "Por contato direto com fezes de cães"
+    ],
+    "correta": 1,
+    "explicacao": "Ao picar uma pessoa infectada e depois uma saudável, o mosquito deposita larvas do verme na pele. Por isso, mosquiteiros, telas e a eliminação de criadouros de mosquitos fazem parte da prevenção (OPAS/OMS).",
+    "statusConteudo": "validado"
+  },
+  {
+    "id": "q-ascaridiase-saneamento",
+    "pergunta": "Por que a ascaridíase é mais comum em lugares com saneamento precário?",
+    "alternativas": [
+      "Porque o verme é transmitido por mosquitos",
+      "Porque os ovos do verme saem nas fezes e contaminam o solo, a água e os alimentos",
+      "Porque o verme vive em caramujos de água doce",
+      "Porque a doença passa de pessoa para pessoa pela tosse"
+    ],
+    "correta": 1,
+    "explicacao": "Os ovos da lombriga saem nas fezes e chegam ao solo; a pessoa os ingere com água não tratada, alimentos crus mal lavados ou mãos sujas. Saneamento, higiene das mãos e água tratada quebram essa cadeia (Ministério da Saúde).",
+    "statusConteudo": "validado"
+  },
+  {
+    "id": "q-estrongiloidiase-entrada",
+    "pergunta": "De que forma as larvas da estrongiloidíase entram no corpo da pessoa?",
+    "alternativas": [
+      "Pela pele em contato com terra úmida",
+      "Pela ingestão de carne de porco malpassada",
+      "Pela picada de um mosquito",
+      "Pelo contato com caramujos"
+    ],
+    "correta": 0,
+    "explicacao": "As larvas infectantes estão na terra úmida e nos excrementos e penetram pela pele. Usar sapatos e evitar o contato da pele com terra possivelmente contaminada são medidas de prevenção (CVE/SES-SP).",
+    "statusConteudo": "validado"
+  }
+]

@@ -1,1 +1,184 @@
-[]
+[
+  {
+    "id": "ms-geo-helmintiase",
+    "titulo": "Geo-Helmintíase — Saúde de A a Z",
+    "instituicao": "Ministério da Saúde",
+    "ano": "2025",
+    "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/g/geo-helmintiase"
+  },
+  {
+    "id": "ms-guia-pratico-geohelmintiases",
+    "titulo": "Guia Prático para o Controle das Geo-helmintíases",
+    "instituicao": "Ministério da Saúde",
+    "ano": "2018",
+    "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_pratico_controle_geohelmintiases.pdf"
+  },
+  {
+    "id": "ms-guia-bolso-2010",
+    "titulo": "Doenças infecciosas e parasitárias: guia de bolso, 8ª edição revista",
+    "instituicao": "Ministério da Saúde",
+    "ano": "2010",
+    "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-diarreicas-agudas/doencas-infecciosas-e-parasitarias_-guia-de-bolso.pdf"
+  },
+  {
+    "id": "ms-guia-bolso-2006",
+    "titulo": "Doenças infecciosas e parasitárias: guia de bolso, 6ª edição revista",
+    "instituicao": "Ministério da Saúde",
+    "ano": "2006",
+    "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_bolso_6ed.pdf"
+  },
+  {
+    "id": "bvs-parasitoses-intestinais-2005",
+    "titulo": "Parasitoses intestinais (Dicas em Saúde)",
+    "instituicao": "Biblioteca Virtual em Saúde do Ministério da Saúde",
+    "ano": "2005",
+    "url": "https://bvsms.saude.gov.br/bvs/dicas/74parasitoses.html"
+  },
+  {
+    "id": "sesa-pr-teniase-cisticercose-2018",
+    "titulo": "Nota Técnica NT 01/DVVZI/2018: orientações sobre a vigilância da teniose e cisticercose",
+    "instituicao": "Secretaria de Estado da Saúde do Paraná (SESA/PR)",
+    "ano": "2018",
+    "url": "https://www.saude.pr.gov.br/sites/default/arquivos_restritos/files/documento/2020-04/notatecnicacisticercosefinal.pdf"
+  },
+  {
+    "id": "ms-esquistossomose",
+    "titulo": "Esquistossomose — Saúde de A a Z",
+    "instituicao": "Ministério da Saúde",
+    "ano": "2025",
+    "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/e/esquistossomose"
+  },
+  {
+    "id": "ms-vigilancia-esquistossomose-2024",
+    "titulo": "Vigilância e Controle da Esquistossomose Mansoni: diretrizes técnicas",
+    "instituicao": "Ministério da Saúde",
+    "ano": "2024",
+    "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/e/esquistossomose/publicacoes/vigilancia-da-esquistossomose-mansoni-2024.pdf"
+  },
+  {
+    "id": "ms-folder-esquistossomose-2021",
+    "titulo": "Esquistossomose mansoni: você conhece e sabe como se prevenir dessa doença?",
+    "instituicao": "Ministério da Saúde",
+    "ano": "2021",
+    "url": "https://www.gov.br/saude/pt-br/campanhas-da-saude/2021/zoonoses/acesse-as-pecas/folder-esquistossomose.pdf"
+  },
+  {
+    "id": "dive-sc-esquistossomose-2012",
+    "titulo": "Informe técnico de esquistossomose (material para profissionais de saúde)",
+    "instituicao": "DIVE — Diretoria de Vigilância Epidemiológica, Secretaria de Estado da Saúde de Santa Catarina",
+    "ano": "2012",
+    "url": "https://dive.saude.sc.gov.br/phocadownload/01-doencas-agravos/esquistossomose/midias/esquistossomose-profissionais.pdf"
+  },
+  {
+    "id": "opas-fasciolose-diretrizes-2024",
+    "titulo": "Operational guidelines for the elimination of human fascioliasis as a public health problem in the Americas",
+    "instituicao": "OMS e OPAS",
+    "ano": "2024",
+    "url": "https://www.who.int/publications/i/item/9789275128084"
+  },
+  {
+    "id": "oms-fascioliasis-qa",
+    "titulo": "Fascioliasis — perguntas e respostas",
+    "instituicao": "Organização Mundial da Saúde (OMS)",
+    "ano": "s.d.",
+    "url": "https://www.who.int/news-room/questions-and-answers/item/q-a-on-fascioliasis"
+  },
+  {
+    "id": "opas-fasciolose-investimentos",
+    "titulo": "Melhores investimentos para acelerar a eliminação de doenças nas Américas: fasciolíase humana",
+    "instituicao": "OPAS",
+    "ano": "2025",
+    "url": "https://www.paho.org/pt/documentos/melhores-investimentos-para-acelerar-eliminacao-doencas-nas-americas-fascioliase-humana"
+  },
+  {
+    "id": "ms-hidatidose-qa-2022",
+    "titulo": "Hidatidose humana: perguntas e respostas",
+    "instituicao": "Ministério da Saúde",
+    "ano": "2022",
+    "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hidatidose-humana/perguntas-e-respostas"
+  },
+  {
+    "id": "oms-echinococcosis-2021",
+    "titulo": "Echinococcosis — fact sheet",
+    "instituicao": "Organização Mundial da Saúde (OMS)",
+    "ano": "2021",
+    "url": "https://www.who.int/news-room/fact-sheets/detail/echinococcosis"
+  },
+  {
+    "id": "opas-filariose-linfatica",
+    "titulo": "Filariose linfática",
+    "instituicao": "OPAS/OMS",
+    "ano": "2024",
+    "url": "https://www.paho.org/pt/topicos/filariose-linfatica"
+  },
+  {
+    "id": "opas-geohelmintiasis",
+    "titulo": "Geohelmintiasis",
+    "instituicao": "OPAS/OMS",
+    "ano": "s.d.",
+    "url": "https://www.paho.org/es/temas/geohelmintiasis"
+  },
+  {
+    "id": "opas-soil-transmitted-helminthiasis",
+    "titulo": "Soil Transmitted Helminthiasis (geohelmintíases transmitidas pelo solo)",
+    "instituicao": "OPAS/OMS",
+    "ano": "s.d.",
+    "url": "https://www.paho.org/pt/node/4948"
+  },
+  {
+    "id": "fiocruz-oxiuriase",
+    "titulo": "Maria coça-coça (Enterobius vermicularis)",
+    "instituicao": "Fiocruz Minas — Centro de Pesquisas René Rachou",
+    "ano": "s.d.",
+    "url": "http://xistose.minas.fiocruz.br/geohelmintoses/maria-coca-coca-enterobius-vermicularis"
+  },
+  {
+    "id": "fiocruz-verminoses-intestinais",
+    "titulo": "Conhecendo as verminoses intestinais (geo-helmintoses)",
+    "instituicao": "Fiocruz Minas — Centro de Pesquisas René Rachou",
+    "ano": "s.d.",
+    "url": "http://xistose.minas.fiocruz.br/geo-helmintoses/conhecendo-as-verminoses-intestinais"
+  },
+  {
+    "id": "cve-sp-estrongiloidiase-2003",
+    "titulo": "Manual das doenças transmitidas por alimentos: Strongyloides spp./estrongiloidíase",
+    "instituicao": "Centro de Vigilância Epidemiológica (CVE), Secretaria de Estado da Saúde de São Paulo",
+    "ano": "2003",
+    "url": "https://www.saude.sp.gov.br/resources/cve-centro-de-vigilancia-epidemiologica/areas-de-vigilancia/doencas-transmitidas-por-agua-e-alimentos/doc/parasitas/strongiloides.pdf"
+  },
+  {
+    "id": "ufg-platelmintos",
+    "titulo": "Filo Platyhelminthes (Especialização em Ensino de Biologia, Módulo 4)",
+    "instituicao": "Universidade Federal de Goiás (CIAR)",
+    "ano": "s.d.",
+    "url": "https://publica.ciar.ufg.br/ebooks/ensino-de-biologia/Mod4Cap2/conteudo/3-3.html"
+  },
+  {
+    "id": "openstax-classificacao-animais",
+    "titulo": "27.2 Características usadas para classificar animais (Biologia Geral)",
+    "instituicao": "OpenStax / LibreTexts",
+    "ano": "2022",
+    "url": "https://query.libretexts.org/Idioma_Portugues/Livro:_General_Biology_(OpenStax)/5:_Diversidade_Biol%C3%B3gica/27:_Introdu%C3%A7%C3%A3o_%C3%A0_diversidade_animal/27.2:_Caracter%C3%ADsticas_usadas_para_classificar_animais"
+  },
+  {
+    "id": "embrapa-nematoides-2007",
+    "titulo": "Diversidade de nematóides em agroecossistemas e ecossistemas naturais",
+    "instituicao": "Embrapa Cerrados",
+    "ano": "2007",
+    "url": "https://www.infoteca.cnptia.embrapa.br/bitstream/doc/571966/1/doc191.pdf"
+  },
+  {
+    "id": "seduc-ce-nematelmintos-2020",
+    "titulo": "Nematelmintos (material de Zoologia, CNT010)",
+    "instituicao": "Secretaria da Educação do Ceará",
+    "ano": "2020",
+    "url": "https://www.ced.seduc.ce.gov.br/wp-content/uploads/sites/82/2020/11/CNT010-Nematelmintos.pdf"
+  },
+  {
+    "id": "ufs-nematoda-2014",
+    "titulo": "Invertebrado II — Aula 02: Filo Nematoda",
+    "instituicao": "Universidade Federal de Sergipe (CESAD)",
+    "ano": "2014",
+    "url": "https://cesad.ufs.br/ORBI/public/uploadCatalago/15390525022014Invertebrado_II_Aula_02.pdf"
+  }
+]

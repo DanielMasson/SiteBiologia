@@ -68,7 +68,7 @@ Outras regras de consistência:
 
 ## Como adicionar perguntas ao quiz
 
-A página `quiz.html` lê `data/quiz.json` (hoje vazio). Cada pergunta é um objeto:
+A página `quiz.html` lê `data/quiz.json` (hoje com 8 perguntas, todas `"validado"` após a pesquisa em fontes oficiais — a equipe ainda precisa revisar). Cada pergunta é um objeto:
 
 ```json
 {
@@ -84,7 +84,7 @@ A página `quiz.html` lê `data/quiz.json` (hoje vazio). Cada pergunta é um obj
 - `correta` é a **posição** da alternativa certa, começando em 0 (no exemplo, `1` é a "Opção B"). Use de 2 a 6 alternativas.
 - Só perguntas com `"statusConteudo": "validado"` aparecem no site. Mantenha `"rascunho"` até a equipe de conteúdo conferir a pergunta e a explicação em fontes confiáveis.
 - Uma pergunta validada não pode ter `A_PREENCHER` nem campos vazios. Perguntas com erro de formato são ignoradas, e o motivo aparece no console do navegador.
-- A página **não está no menu** de propósito, para não mostrar um quiz vazio. Quando houver perguntas validadas, adicione `{ arquivo: "quiz.html", texto: "Quiz" }` à lista `PAGINAS_MENU` em `assets/js/main.js` e inclua `<li><a href="quiz.html">Quiz</a></li>` nos blocos `<noscript>` de cada página.
+- O quiz já está no menu (`PAGINAS_MENU` em `assets/js/main.js` e os links `<noscript>` das páginas), porque há perguntas validadas. Se o quiz um dia ficar sem perguntas validadas, remova esses links para não mostrar a página vazia.
 
 ## Tema claro e escuro
 
@@ -114,8 +114,8 @@ O gerador de QR Code é código próprio em `assets/js/qrcode-gerador.js`, sem b
 
 ## O que ainda falta preencher
 
-Veja `documentacao/pendencias-equipe.md`, com a lista de tudo que está marcado como `A_PREENCHER` e das decisões que cabem à equipe.
+Veja `documentacao/pendencias-equipe.md`: revisão e validação do conteúdo científico (10 fichas e o quiz estão em `"rascunho"`), dados da equipe (equipe, orientadores, campus/turma, data/local, contato), logo/favicon, imagens da galeria, esquemas de ciclo e a URL final de publicação.
 
 ## Aviso
 
-O conteúdo científico está em desenvolvimento e passa por validação da equipe. Textos marcados com `A_PREENCHER` precisam ser completados e conferidos em fontes confiáveis antes da publicação.
+O conteúdo científico está em desenvolvimento e passa por validação da equipe. As 10 fichas estão completas, mas em `"rascunho"`: mudem para `"validado"` só depois de conferir o texto nas fontes citadas.

@@ -97,6 +97,12 @@ a.card:hover {
   color: var(--cor-texto);
 }
 
+.fonte-nota {
+  margin-top: var(--esp-3);
+  font-size: 0.875rem;
+  color: var(--cor-texto-suave);
+}
+
 .hero {
   padding-block: var(--esp-8);
   background: linear-gradient(180deg, var(--cor-apoio), var(--cor-fundo));
