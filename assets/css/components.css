@@ -670,3 +670,103 @@ a.card--link:focus-visible {
     font-size: 1.25rem;
   }
 }
+
+/* Páginas informativas: títulos de seção, cards de informação, lista de ações e etapas */
+
+.secao__titulo {
+  margin-block: var(--esp-6) var(--esp-4);
+}
+
+.card--info {
+  height: 100%;
+}
+
+.card__icone {
+  display: block;
+  margin-bottom: var(--esp-3);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.card--info .lista-topicos {
+  color: var(--cor-texto-suave);
+}
+
+.destaque-regional {
+  margin-top: var(--esp-6);
+}
+
+.destaque-regional p {
+  max-width: var(--largura-texto);
+}
+
+.checklist {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--esp-3);
+}
+
+.checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--esp-3);
+  padding: var(--esp-4);
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+}
+
+.checklist li::before {
+  content: "✓" / "";
+  flex: none;
+  font-weight: bold;
+  color: var(--cor-primaria);
+}
+
+.etapas {
+  list-style: none;
+  counter-reset: etapa;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--esp-4);
+  margin-block: var(--esp-5);
+}
+
+.etapas li {
+  counter-increment: etapa;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--esp-3);
+  padding: var(--esp-4);
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+}
+
+.etapas li::before {
+  content: counter(etapa);
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  font-weight: bold;
+  color: var(--cor-texto-claro);
+  background-color: var(--cor-primaria);
+  border-radius: var(--raio-pilula);
+}
+
+@media (min-width: 700px) {
+  .checklist,
+  .etapas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .etapas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

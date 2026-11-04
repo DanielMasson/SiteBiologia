@@ -41,31 +41,47 @@
       </div>
     </noscript>
 
-    <section class="secao">
+    <section class="secao" aria-labelledby="titulo-frentes">
       <div class="container">
         <h1>Prevenção e meio ambiente</h1>
         <p>As verminoses podem ser evitadas com ações simples no dia a dia: saneamento, água segura, higiene pessoal e cuidados com os alimentos e com o solo.</p>
 
-        <h2>Saneamento básico</h2>
-        <ul class="lista-topicos">
-          <li>Água tratada e filtrada para beber e cozinhar.</li>
-          <li>Destino adequado do esgoto e da coleta de lixo.</li>
-        </ul>
+        <h2 id="titulo-frentes" class="secao__titulo">Quatro frentes de prevenção</h2>
+        <div class="grade">
+          <article class="card card--info">
+            <span class="card__icone" aria-hidden="true">💧</span>
+            <h3 class="card__titulo">Saneamento básico</h3>
+            <ul class="lista-topicos">
+              <li>Água tratada e filtrada para beber e cozinhar.</li>
+              <li>Destino adequado do esgoto e da coleta de lixo.</li>
+            </ul>
+          </article>
+          <article class="card card--info">
+            <span class="card__icone" aria-hidden="true">🧼</span>
+            <h3 class="card__titulo">Higiene pessoal e dos alimentos</h3>
+            <ul class="lista-topicos">
+              <li>Lavar bem as mãos.</li>
+              <li>Lavar frutas e verduras.</li>
+              <li>Cozinhar bem as carnes.</li>
+            </ul>
+          </article>
+          <article class="card card--info">
+            <span class="card__icone" aria-hidden="true">👟</span>
+            <h3 class="card__titulo">Solo e calçados</h3>
+            <p class="card__texto">Algumas verminoses, como a ancilostomose e a estrongiloidíase, estão ligadas ao contato com solo contaminado. Usar calçados e evitar o contato direto com a terra são cuidados importantes.</p>
+          </article>
+          <article class="card card--info">
+            <span class="card__icone" aria-hidden="true">🐌</span>
+            <h3 class="card__titulo">Água parada, rios, lagoas e caramujos</h3>
+            <p class="card__texto">Na esquistossomose, o controle de caramujos e os cuidados com a água de rios e lagoas fazem parte da prevenção.</p>
+          </article>
+        </div>
 
-        <h2>Higiene pessoal e dos alimentos</h2>
-        <ul class="lista-topicos">
-          <li>Lavar bem as mãos.</li>
-          <li>Lavar frutas e verduras.</li>
-          <li>Cozinhar bem as carnes.</li>
-        </ul>
-
-        <h2>Cuidados com o solo e os calçados</h2>
-        <p>Algumas verminoses, como a ancilostomose e a estrongiloidíase, estão ligadas ao contato com solo contaminado. Usar calçados e evitar o contato direto com a terra são cuidados importantes.</p>
-
-        <h2>Água parada, rios, lagoas e caramujos</h2>
-        <p>Na esquistossomose, o controle de caramujos e os cuidados com a água de rios e lagoas fazem parte da prevenção.</p>
         <!-- Fontes: DIVE/SES-SC (Informe técnico de esquistossomose, 2012) e Ministério da Saúde (Esquistossomose). -->
-        <p>O que vale para a nossa região: em Santa Catarina, os primeiros casos adquiridos no estado foram detectados em 1980, em São Francisco do Sul, com transmissão focal também em Jaraguá do Sul e Guaramirim. O caramujo Biomphalaria, hospedeiro intermediário do verme, já foi encontrado em municípios como Blumenau, Itajaí e Joinville, e hoje os casos no estado são esporádicos, incluindo pessoas que chegaram de áreas endêmicas do país. Por isso, valem aqui as mesmas medidas: evitar o contato com a água de rios, lagoas e áreas alagadas onde haja caramujos, usar calçados em enchentes e no trabalho no campo, e apoiar o saneamento e a vigilância da sua comunidade.</p>
+        <aside class="destaque-curiosidade destaque-regional" aria-labelledby="titulo-regiao">
+          <strong class="destaque-curiosidade__titulo" id="titulo-regiao">O que vale para a nossa região</strong>
+          <p>em Santa Catarina, os primeiros casos adquiridos no estado foram detectados em 1980, em São Francisco do Sul, com transmissão focal também em Jaraguá do Sul e Guaramirim. O caramujo Biomphalaria, hospedeiro intermediário do verme, já foi encontrado em municípios como Blumenau, Itajaí e Joinville, e hoje os casos no estado são esporádicos, incluindo pessoas que chegaram de áreas endêmicas do país. Por isso, valem aqui as mesmas medidas: evitar o contato com a água de rios, lagoas e áreas alagadas onde haja caramujos, usar calçados em enchentes e no trabalho no campo, e apoiar o saneamento e a vigilância da sua comunidade.</p>
+        </aside>
       </div>
     </section>
 
@@ -91,8 +107,8 @@
 
     <section class="secao" aria-labelledby="titulo-posso-fazer">
       <div class="container">
-        <h2 id="titulo-posso-fazer">O que eu posso fazer</h2>
-        <ul class="lista-topicos">
+        <h2 id="titulo-posso-fazer" class="secao__titulo">O que eu posso fazer</h2>
+        <ul class="checklist">
           <li>Conferir se a água que você bebe é tratada.</li>
           <li>Lavar mãos, frutas e verduras antes das refeições.</li>
           <li>Cozinhar bem as carnes.</li>

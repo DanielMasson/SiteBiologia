@@ -41,47 +41,64 @@
       </div>
     </noscript>
 
-    <section class="secao">
+    <section class="secao" aria-labelledby="titulo-equipe">
       <div class="container">
         <h1>Sobre o projeto</h1>
         <p>O site Vermes que Importam é um trabalho integrado entre a disciplina de Zoologia e o Curso Técnico em Informática para Internet do IFC. Ele apresenta os platelmintos e os nematelmintos, as verminoses que causam e as medidas de prevenção, e foi feito para a Mostra de Educação Ambiental do IFC.</p>
 
-        <h2>Equipe</h2>
-        <ul class="lista-topicos">
-          <li><strong>Programadores:</strong> Daniel Masson e Vanderlei Pittan</li>
-          <li><strong>Pesquisa e amostragem:</strong> Gabriela Nietiedt e Ana Paixão</li>
-        </ul>
-
-        <h2>Orientadores</h2>
-        <p>Professor Jóse Adelson.</p>
-
-        <h2>Instituição</h2>
-        <!-- A_PREENCHER (opcional): turma, se a equipe quiser informar -->
-        <p>Instituto Federal Catarinense (IFC). Campus Concordia.</p>
+        <h2 id="titulo-equipe" class="secao__titulo">Quem fez</h2>
+        <div class="grade">
+          <article class="card card--info">
+            <span class="card__icone" aria-hidden="true">💻</span>
+            <h3 class="card__titulo">Programadores</h3>
+            <p class="card__texto">Daniel Masson e Vanderlei Pittan</p>
+          </article>
+          <article class="card card--info">
+            <span class="card__icone" aria-hidden="true">🔬</span>
+            <h3 class="card__titulo">Pesquisa e amostragem</h3>
+            <p class="card__texto">Gabriela Nietiedt e Ana Paixão</p>
+          </article>
+          <article class="card card--info">
+            <span class="card__icone" aria-hidden="true">🎓</span>
+            <h3 class="card__titulo">Orientador</h3>
+            <p class="card__texto">Professor Jóse Adelson</p>
+          </article>
+          <article class="card card--info">
+            <span class="card__icone" aria-hidden="true">🏫</span>
+            <h3 class="card__titulo">Instituição</h3>
+            <!-- A_PREENCHER (opcional): turma, se a equipe quiser informar -->
+            <p class="card__texto">Instituto Federal Catarinense (IFC), Campus Concordia</p>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="secao secao--apoio" aria-labelledby="titulo-metodologia">
       <div class="container">
-        <h2 id="titulo-metodologia">Metodologia</h2>
+        <h2 id="titulo-metodologia" class="secao__titulo">Como o trabalho foi feito</h2>
         <p>Os textos científicos foram pesquisados em fontes oficiais e confiáveis — Ministério da Saúde, Fiocruz, OMS/OPAS e secretarias de saúde — e foram revisados pela equipe.</p>
-        <p>O conteúdo do site é educativo: não traz diagnóstico, dose ou indicação de medicamento.</p>
         <!-- Etapas do trabalho: preenchidas pela equipe responsável pelo projeto. -->
-        <ol class="passos">
+        <ol class="etapas">
           <li>Pesquisa em fontes oficiais e em livros didáticos.</li>
           <li>Redação dos textos das fichas, das páginas dos grupos e das perguntas do quiz.</li>
           <li>Revisão e validação do conteúdo pela equipe.</li>
           <li>Desenvolvimento e testes do site no computador e no celular.</li>
           <li>Montagem da exposição, com QR Codes e material impresso.</li>
         </ol>
+        <div class="destaque-curiosidade destaque-regional">
+          <strong class="destaque-curiosidade__titulo">Conteúdo educativo</strong>
+          <p>O site não traz diagnóstico, dose ou indicação de medicamento.</p>
+        </div>
       </div>
     </section>
 
     <section class="secao" aria-labelledby="titulo-referencias">
       <div class="container">
-        <h2 id="titulo-referencias">Referências</h2>
-        <p class="estado-mensagem" id="referencias-estado" role="status">Carregando...</p>
-        <ul id="lista-referencias" class="ficha__lista"></ul>
+        <h2 id="titulo-referencias" class="secao__titulo">Referências</h2>
+        <div class="card">
+          <p class="estado-mensagem" id="referencias-estado" role="status">Carregando...</p>
+          <ul id="lista-referencias" class="ficha__lista"></ul>
+        </div>
       </div>
     </section>
 
