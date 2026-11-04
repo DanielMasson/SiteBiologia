@@ -19,13 +19,13 @@ Depois acesse <http://localhost:8000>.
 ```
 .
 ├── index.html            # página inicial
-├── *.html                # demais páginas (grupos, verminoses, prevenção, galeria, sobre, qrcodes, quiz)
+├── *.html                # demais páginas (grupos, verminoses, prevenção, sobre, qrcodes, quiz)
 ├── 404.html
-├── data/                 # dados em JSON (doenças, galeria, referências, quiz)
+├── data/                 # dados em JSON (doenças, referências, quiz)
 ├── assets/
 │   ├── css/              # tokens, base, layout, componentes
-│   ├── js/               # utils, main, verminoses, doenca, doencas-do-grupo, prevencao, galeria, sobre, qrcodes, qrcode-gerador, tema, quiz
-│   └── img/              # ciclos, galeria e logo
+│   ├── js/               # utils, main, verminoses, doenca, doencas-do-grupo, prevencao, sobre, qrcodes, qrcode-gerador, tema, quiz
+│   └── img/              # ciclos e logo
 └── documentacao/         # planejamento e instruções do projeto
 ```
 
@@ -54,12 +54,6 @@ Outras regras de consistência:
 5. Se houver esquema do ciclo de vida, salve o SVG em `assets/img/ciclos/` e preencha `imagemCiclo`.
 6. Abra `verminoses.html` e `doenca.html?id=<novo-id>` no servidor local para conferir.
 
-## Como adicionar uma imagem à galeria
-
-1. Salve a imagem em `assets/img/galeria/` (peso sugerido: até 300 KB).
-2. Abra `data/galeria.json` e adicione um item com `id`, `arquivo`, `legenda`, `alt`, `autor`, `licenca` e `fonte` (use `"acervo da equipe"` em `fonte` para material próprio).
-3. Toda imagem precisa de `alt` descritivo, autoria e licença. Se `autor`, `licenca` ou `fonte` faltarem, o site mostra "A preencher pela equipe" e registra um aviso no console.
-4. Abra `galeria.html` no servidor local para conferir.
 
 ## Como adicionar uma referência
 
@@ -114,8 +108,5 @@ O gerador de QR Code é código próprio em `assets/js/qrcode-gerador.js`, sem b
 
 ## O que ainda falta preencher
 
-Veja `documentacao/pendencias-equipe.md`: revisão e validação do conteúdo científico (10 fichas e o quiz estão em `"rascunho"`), dados da equipe (equipe, orientadores, campus/turma, data/local, contato), logo/favicon, imagens da galeria, esquemas de ciclo e a URL final de publicação.
+Veja `documentacao/pendencias-equipe.md`: revisão e validação do conteúdo científico , dados da equipe (equipe, orientadores, campus/turma, data/local, contato), logo/favicon, esquemas de ciclo e a URL final de publicação.
 
-## Aviso
-
-O conteúdo científico está em desenvolvimento e passa por validação da equipe. As 10 fichas estão completas, mas em `"rascunho"`: mudem para `"validado"` só depois de conferir o texto nas fontes citadas.

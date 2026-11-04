@@ -6,7 +6,6 @@ const PAGINAS_MENU = [
   { arquivo: "nematelmintos.html", texto: "Nematelmintos" },
   { arquivo: "verminoses.html", texto: "Verminoses" },
   { arquivo: "prevencao.html", texto: "Prevenção" },
-  { arquivo: "galeria.html", texto: "Galeria" },
   { arquivo: "sobre.html", texto: "Sobre" },
   { arquivo: "quiz.html", texto: "Quiz" }
 ];

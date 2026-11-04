@@ -84,10 +84,6 @@ function criarSecaoCiclo(doenca, pendenteVisivel) {
         }
       })
     );
-  } else {
-    secao.appendChild(
-      criarElemento("p", { classe: "espaco-esquema", texto: "Esquema do ciclo de vida em preparação." })
-    );
   }
 
   const passos = criarElemento("ol", { classe: "passos" });

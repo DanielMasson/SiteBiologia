@@ -195,7 +195,7 @@ function iniciarQuiz() {
         area.appendChild(
           criarElemento("p", {
             classe: "estado-mensagem",
-            texto: "O quiz será publicado em breve, depois da revisão da equipe."
+            texto: "Nenhuma pergunta disponível no momento."
           })
         );
         return;

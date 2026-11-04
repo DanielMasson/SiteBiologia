@@ -50,7 +50,7 @@ function iniciarSobre() {
         lista.insertAdjacentElement(
           "afterend",
           criarElemento("p", {
-            texto: "As referências serão adicionadas após a revisão da equipe."
+            texto: "Nenhuma referência cadastrada."
           })
         );
         lista.remove();

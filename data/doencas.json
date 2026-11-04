@@ -1,7 +1,7 @@
 [
   {
     "id": "teniase-cisticercose",
-    "statusConteudo": "rascunho",
+    "statusConteudo": "validado",
     "nomePopular": "Teníase e cisticercose",
     "agentes": ["Taenia solium", "Taenia saginata"],
     "filo": "Platyhelminthes",
@@ -37,7 +37,7 @@
   },
   {
     "id": "esquistossomose",
-    "statusConteudo": "rascunho",
+    "statusConteudo": "validado",
     "nomePopular": "Esquistossomose",
     "agentes": ["Schistosoma mansoni"],
     "filo": "Platyhelminthes",
@@ -73,7 +73,7 @@
   },
   {
     "id": "fasciolose",
-    "statusConteudo": "rascunho",
+    "statusConteudo": "validado",
     "nomePopular": "Fasciolose",
     "agentes": ["Fasciola hepatica"],
     "filo": "Platyhelminthes",
@@ -109,7 +109,7 @@
   },
   {
     "id": "hidatidose",
-    "statusConteudo": "rascunho",
+    "statusConteudo": "validado",
     "nomePopular": "Hidatidose",
     "agentes": ["Echinococcus granulosus", "Echinococcus vogeli", "Echinococcus oligarthra"],
     "filo": "Platyhelminthes",
@@ -144,7 +144,7 @@
   },
   {
     "id": "ascaridiase",
-    "statusConteudo": "rascunho",
+    "statusConteudo": "validado",
     "nomePopular": "Ascaridíase",
     "agentes": ["Ascaris lumbricoides"],
     "filo": "Nematoda",
@@ -180,7 +180,7 @@
   },
   {
     "id": "ancilostomose",
-    "statusConteudo": "rascunho",
+    "statusConteudo": "validado",
     "nomePopular": "Ancilostomose",
     "agentes": ["Ancylostoma duodenale", "Necator americanus"],
     "filo": "Nematoda",
@@ -216,7 +216,7 @@
   },
   {
     "id": "oxiuriase",
-    "statusConteudo": "rascunho",
+    "statusConteudo": "validado",
     "nomePopular": "Oxiuríase",
     "agentes": ["Enterobius vermicularis"],
     "filo": "Nematoda",
@@ -252,7 +252,7 @@
   },
   {
     "id": "tricuriase",
-    "statusConteudo": "rascunho",
+    "statusConteudo": "validado",
     "nomePopular": "Tricuríase",
     "agentes": ["Trichuris trichiura"],
     "filo": "Nematoda",
@@ -288,7 +288,7 @@
   },
   {
     "id": "filariose",
-    "statusConteudo": "rascunho",
+    "statusConteudo": "validado",
     "nomePopular": "Filariose linfática",
     "agentes": ["Wuchereria bancrofti"],
     "filo": "Nematoda",
@@ -324,7 +324,7 @@
   },
   {
     "id": "estrongiloidiase",
-    "statusConteudo": "rascunho",
+    "statusConteudo": "validado",
     "nomePopular": "Estrongiloidíase",
     "agentes": ["Strongyloides stercoralis"],
     "filo": "Nematoda",
